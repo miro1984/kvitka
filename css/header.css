@@ -1,0 +1,124 @@
+.header {
+    padding-top: 5px;
+    background-color: #888888;
+    background-image: url("./../img/header/header-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.header__top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.header__title {
+    margin-bottom: 12px;
+    max-width: 600px;
+    
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 49px;
+    color: #FFFFFF;
+    text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.header__title span {
+    
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 49px;
+    color: #B3DC72;
+    text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.header__list {
+    display: flex;
+    margin-left: -8px;
+}
+
+.header__item {
+    width: 90px;
+    text-align: center;
+}
+
+.header__img {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 4px;
+}
+
+.header__item:hover {
+    stroke:#fff;
+}
+
+.header__descr {
+    
+    
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.header__right {
+    text-align: right;
+}
+
+.header__logo {
+    margin-bottom: 28px;
+}
+
+.header__lang {   
+    font-weight: 300;
+    font-size: 15px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    margin-bottom: 26px;
+}
+
+.header__lang span {
+    font-weight: 700;
+} 
+
+.header__phone {
+    position: relative;
+    padding-left: 16px;
+    font-weight: 600;
+    font-size: 30px;
+    color: #FFFFFF;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 8px;
+}
+
+.header__phone::before {
+    position: absolute;
+    content: "";
+    width: 16px;
+    height: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    background-image: url("./../img/header/arrow-right.svg");
+}
+
+.header__address {
+    position: relative;
+    font-size: 14px;
+    color: #FFFFFF;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+    padding-left: 16px;
+}
+
+.header__address::before {
+    position: absolute;
+    content: "";
+    width: 12px;
+    height: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    background-image: url("./../img/header/marker.svg");
+}
