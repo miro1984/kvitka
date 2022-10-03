@@ -60,3 +60,25 @@ menu.addEventListener('click', (e) => {
 	}
 });
 
+
+
+//  Footer list
+const showMore = document.querySelectorAll('.show-more');
+
+showMore.forEach((item) => {
+	item.addEventListener('click', () => {
+		let parent = item.closest('.footer__content');
+		if (item.innerText == 'Все >') {
+			const array = Array.from(parent.querySelector('.footer__list').children);
+			array.forEach(el => el.classList.add('is-visible'));
+			item.innerText = 'Cкрыть';
+		} else {
+			const array = Array.from(parent.querySelector('.footer__list').children);
+			const visItems = array.slice(7, array.length);
+			visItems.forEach(el => el.classList.remove('is-visible'));
+			item.innerText = 'Все >';
+		}
+	});
+});
+
+

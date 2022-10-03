@@ -16,20 +16,18 @@
 .header__title {
     margin-bottom: 12px;
     max-width: 600px;
-    
     font-weight: 900;
     font-size: 40px;
     line-height: 49px;
-    color: #FFFFFF;
+    color: var(--white-color);
     text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.header__title span {
-    
+.header__title span {  
     font-weight: 900;
     font-size: 40px;
     line-height: 49px;
-    color: #B3DC72;
+    color: var(--acent-color);
     text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
@@ -40,27 +38,39 @@
 
 .header__item {
     width: 90px;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
 }
 
-.header__img {
-    width: 64px;
-    height: 64px;
+.header__item svg {
+    fill: var(--white-color);
+    transition: all .3s ease-in-out;
+}
+
+.header__link {
+    display: block;
+
     margin-bottom: 4px;
 }
 
-.header__item:hover {
-    stroke:#fff;
+.header__item:hover svg {
+    fill: var(--accent-color);
+}
+
+.header__item:hover .header__descr {
+    color: var(--accent-color);
 }
 
 .header__descr {
-    
-    
     font-weight: 400;
     font-size: 13px;
     line-height: 16px;
     text-align: center;
-    color: #FFFFFF;
+    color: var(--white-color);
+    transition: color .3s ease-in-out;
 }
 
 .header__right {
@@ -74,7 +84,7 @@
 .header__lang {   
     font-weight: 300;
     font-size: 15px;
-    color: #FFFFFF;
+    color: var(--white-color);
     text-transform: uppercase;
     margin-bottom: 26px;
 }
@@ -88,7 +98,7 @@
     padding-left: 16px;
     font-weight: 600;
     font-size: 30px;
-    color: #FFFFFF;
+    color: var(--white-color);
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
     margin-bottom: 8px;
 }
@@ -107,7 +117,7 @@
 .header__address {
     position: relative;
     font-size: 14px;
-    color: #FFFFFF;
+    color: var(--white-color);
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
     padding-left: 16px;
 }

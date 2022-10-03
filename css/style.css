@@ -1,7 +1,12 @@
 @import "fonts.css";
 @import "base.css";
 @import "header.css";
+/* @import "logo.css"; */
 @import "menu.css";
+
+
+
+@import "footer.css";
 
 
 
@@ -17,93 +22,29 @@
 }
 
 .logo__img {
+    display: block;
+    width: 64px;
+    height: 64px;
     margin-right: 8px;
 }
 
 .logo__title {   
-    font-weight: 700;
+    font-weight: 900;
     font-size: 44px;
     line-height: 44px;
-    color: #FFFFFF;
+    letter-spacing: .4px;
+    color: var(--white-color);
     text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .logo__descr {
     font-weight: 400;
-    font-size: 15px;
-    color: #FFFFFF;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: .4px;
+    color: var(--white-color);
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
 }
-
-
-/*----- Nav -----*/
-
-/* .menu__list {
-    height: 60px;
-    border-bottom: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    cursor: pointer;
-    transition: background-color .3s;
-}
-
-.menu__item {
-    box-sizing: border-box;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid #fff;
-    border-bottom: none;
-    transition: background-color .3s;
-}
-
-.menu__item:not(:last-child) {
-    border-right: none;
-}
-
-.menu__item:hover .menu__link {
-    color: #000;
-}
-
-.menu__item:hover {
-    background-color: #fff;
-} 
-
-.menu__item:hover .dropdown__link::before {
-     border-left: 4px solid #000;
-     transform: rotate(90deg);
-}
-
-.menu__link {
-
-    font-style: normal;
-    font-weight: 600;
-    font-size: 15px;
-    line-height: 18px;
-    text-align: center;
-    color: #FFFFFF;
-    transition: color .3s;
-}
-
-.dropdown__link {
-    position: relative;
-}
-
-.dropdown__link::before {
-    position: absolute;
-    content: "";
-    border: 4px solid transparent;
-    border-left: 4px solid #fff;
-    top: 50%;
-    transform: translateY(-50%);
-    left: -23px;
-    transition: border-left .3s, transform .3s;
-} */
-
-
 
 /*----- Product -----*/
 
@@ -112,10 +53,9 @@
 }
 
 .product-title {
- 
     font-weight: 600;
     font-size: 24px;
-    color: #000;
+    color: var(--black-color);
     margin-bottom: 20px;
 }
 
@@ -139,7 +79,7 @@
 
     font-weight: 600;
     font-size: 15px;
-    color: #000000;
+    color: var(--black-color);
     margin-bottom: 10px;
 }
 
@@ -150,118 +90,11 @@
 }
 
 .product__info {
-
     font-weight: 400;
     font-size: 14px;
     line-height: 17px;
-    color: #000000;
+    color: var(--black-color);
 }
-
-
-/*----- Footer -----*/
-
-
-.footer {
-    margin-top: 40px;
-    background-color: #000;
-    padding-top: 16px;
-    padding-bottom: 16px;
-}
-
-.footer__top {
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 17px;
-}
-
-.footer__title {
-    position: relative;
-
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 18px;
-    text-decoration-line: underline;
-    color: #FFF;
-    margin-bottom: 20px;
-}
-
-/* .footer__title::after {
-    position: absolute;
-    content: "";
-    width: 50px;
-    height: 1px;
-    background-color: #B3DC72;
-    top: 26px;
-    left: 0;
-
-} */
-
-/* .footer__link {
-    font-family: 'Montserrat';
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 18px;
-    color: #FFF;
-} */
-
-
-
-.footer__line {
-    display: block;
-    width: 100%;
-    height: 1px;
-    background-color: #fff;
-    margin-bottom: 16px;
-}
-
-.footer__bottom {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-}
-
-.footer__phones:last-child {
-    margin-left: 30px;
-}
-
-.footer__contacts {
-    display: flex;
-    justify-content: space-between;
-}
-
-.footer-text {
-   
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 18px;
-    color: #FFFFFF;
-}
-
-.footer__link {
-    transition: color .3s;
-}
-
-.footer__link:hover {
-    color: #B3DC72;
-}
-
-.footer__link--gray {
-    color: #4B4B4B;
-}
-
-.footer__mode {
-    text-align: right;
-}
-
-
-
-
-
-
-
-
-
-
 
 .hide {
     display: none;

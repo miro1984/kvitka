@@ -41,7 +41,7 @@
 
 .nav__list--dropdown {
 	position: absolute;
-	background-color: #fff;
+	background-color: var(--white-color);
     padding: 8px 0;
 	left: 0;
 	top: 100%;
@@ -226,7 +226,7 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		
+		color: var(--black-color);
 		text-align: left;
 	}
 
