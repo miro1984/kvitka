@@ -133,18 +133,18 @@
 @media (min-width: 769px) {
 
 	.nav__item:hover .nav__link{
-		color: #B3DC72;
+		color: var(--accent-color);
 	}
 
 	.nav__item:hover svg {
-		fill: #B3DC72;
+		fill: var(--accent-color);
 		transform: rotate(90deg);
 		transition: all 0.3s;
 		transition: fill .3s ease-in-out, transform .3s;
 	}
 
 	.dropdown-list__link:hover {
-	color: #B3DC72;
+		color: var(--accent-color);
 	}
 
 	.nav__link--drop:hover::after {
@@ -183,7 +183,7 @@
 		height: 100vh;
 		z-index: 100;
 		box-shadow: 5px 0 15px -5px rgba(0,0,0, 0.8);
-		background-color: #fff;
+		background-color: var(--white-color);
 		transform: translateX(-150vw);
 		overflow-x: hidden;
 		overflow-y: auto;
@@ -202,7 +202,7 @@
 		display: flex;
 		flex-direction: row-reverse;
 		margin-left: 0 !important;
-		border-bottom: 1px solid #B3DC72;
+		border-bottom: 1px solid var(--accent-color);
 		font-size: 20px;
 		width: 100%;
 		padding: 0;
@@ -261,7 +261,7 @@
 		visibility: visible;
 		display: block;
 		transform: none;
-		background-color: #fff;
+		background-color: var(--white-color);
 		transition: all 0.3s;
 	}
 
@@ -278,9 +278,9 @@
 
 	.mobile-back a {
 		font-weight: 600;
-		color: #B3DC72;
+		color: var(--accent-color);
 		border: none;
-		border-bottom: 1px solid #B3DC72;
+		border-bottom: 1px solid var(--accent-color);
 		display: flex;
 		align-items: center;
 		justify-content: flex-start;
