@@ -93,17 +93,9 @@
     font-weight: 700;
 } 
 
-.header__phone {
-    position: relative;
-    padding-left: 16px;
-    font-weight: 600;
-    font-size: 30px;
-    color: var(--white-color);
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
-    margin-bottom: 8px;
-}
 
-.header__phone::before {
+
+/* .header__phone::before {
     position: absolute;
     content: "";
     width: 16px;
@@ -112,7 +104,7 @@
     transform: translateY(-50%);
     left: 0;
     background-image: url("./../img/header/arrow-right.svg");
-}
+} */
 
 .header__address {
     position: relative;

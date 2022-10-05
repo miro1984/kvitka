@@ -94,7 +94,7 @@
 	top: 0;
 	width: 100%;
 	height: 2px;
-	background-color: #000;
+	background-color: var(--accent-color);
 }
 
 .burger::after {
@@ -110,7 +110,7 @@
 	width: 100%;
 	height: 2px;
 	display: inline-block;
-	background-color: #000;
+	background-color: var(--accent-color);
 }
 
 .overlay {
@@ -246,10 +246,10 @@
 		border: none !important;
 	}
 
-	.nav__list.transformation {
+/* 	.nav__list.transformation {
 		transform: translateX(-100%);
 		transition: all 0.3s;
-	}
+	} */
 
 	.nav__list.transformation {
 		transform: translateX(-100%);

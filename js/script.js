@@ -3,6 +3,8 @@ const menu = document.querySelector('.nav'),
 			mobileBack = document.querySelector('.mobile-back'),
 			overlay = document.querySelector('.overlay');
 
+
+
 const lockScroll = () => {
 	document.body.classList.add('lock');
 }
@@ -37,6 +39,26 @@ overlay.addEventListener('click', () => {
 	unlockScroll();
 });
 
+
+// Phone
+
+const phoneBtn = document.querySelector('.phone');
+const phone = document.querySelector('.phone__list');
+
+phoneBtn.addEventListener('click', () => {
+	phone.classList.toggle('active');
+});
+
+window.addEventListener('click', e => {
+	const target = e.target;
+	if (!target.closest('.phone__list') && !target.closest('.phone')) {
+		phone.classList.remove('active');
+	}
+});
+
+
+
+// Menu
 menu.addEventListener('click', (e) => {
 	if (e.target.classList.contains('nav__link--drop')) {
 		e.preventDefault();

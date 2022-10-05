@@ -1,0 +1,112 @@
+
+.phone {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    padding-bottom: 8px;
+}
+
+
+.phone__text {
+    padding-left: 14px;
+    padding-right: 8px;
+    font-weight: 600;
+    font-size: 30px;
+    color: var(--white-color);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25); 
+    transition: color.3s ease-in-out;
+}
+
+
+
+.phone__icon {
+    display: block;
+    width: 24px;
+    height: 24px;
+    fill: var(--white-color);
+    transition: fill .3s ease-in-out;
+}
+
+.phone__icon-arrow {
+    display: block;
+	width: 14px;
+	height: 14px;
+    transform: rotate(90deg);
+    fill: var(--white-color);
+    transition: fill .3s ease-in-out;
+}
+
+.phone:hover .phone__text {
+    color: var(--accent-color);
+}
+
+.phone:hover .phone__icon {
+    fill: var(--accent-color);
+}
+
+.phone:hover .phone__icon-arrow {
+    fill: var(--accent-color);
+}
+
+.phone__list {
+	z-index: 100;
+    display: none;
+}
+
+.phone-list__item {
+	padding: 8px 16px;	
+	box-sizing: border-box;
+	display: flex;
+	justify-content: flex-end;
+    cursor: pointer;
+}
+
+.phone__list {
+	position: absolute;
+	background-color: var(--white-color);
+	right: 0;
+	top: 100%;
+	display: flex;
+	flex-direction: column;
+	box-shadow: 0 5px 15px 0 rgba(0,0,0, 0.2);
+	transition: all 0.6s;
+	opacity: 0;
+	visibility: hidden;
+}
+
+.phone__list.active {
+	transform: translateX(-100%);
+	transition: all 0.3s;
+}
+
+.phone__list.active {
+	opacity: 1;
+	visibility: visible;
+	display: block;
+	transform: none;
+	background-color: var(--white-color);
+	transition: all 0.3s;
+}
+.phone-list__item {
+    display: flex;
+    align-items: center;
+}
+
+.phone-list__link {
+    padding-left: 16px;
+    font-weight: 400;
+    font-size: 18px;
+    transition: color .3s ease-in-out;
+}
+
+.phone-list__item svg {
+    display: block;
+    width: 18px;
+    height: 18px;
+    fill: var(--accent-color);
+}
+
+.phone-list__link:hover {
+    color: var(--accent-color);
+}
