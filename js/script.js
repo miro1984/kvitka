@@ -56,7 +56,25 @@ window.addEventListener('click', e => {
 	}
 });
 
+// Copy Phone To Clipboard
 
+const phoneNumberBtn = document.querySelectorAll('.phone-number__copy');
+
+phoneNumberBtn.forEach((item) => {
+	item.addEventListener('click', () => {
+		phoneNumber = item.nextElementSibling.innerText;
+		phoneNumber = navigator.clipboard.writeText(phoneNumber);
+	});
+});
+
+
+// Link to Viber Chat
+
+/* const viberLink = document.querySelector('.viber-link');
+
+viberLink.addEventListener('click', () => {
+	console.log(viberLink);
+}) */
 
 // Menu
 menu.addEventListener('click', (e) => {
