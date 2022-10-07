@@ -3,6 +3,7 @@
 @import "header.css";
 @import "menu.css";
 @import "phone.css";
+@import "location.css";
 
 @import "footer.css";
 
@@ -19,14 +20,16 @@
     margin-top: 8px;
 }
 
-.logo__img {
+.logo-header svg {
     display: block;
-    width: 64px;
-    height: 64px;
-    margin-right: 8px;
+    width: 60px;
+    height: 60px;
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.25));
 }
 
-.logo__title {   
+
+.logo-header__title {
+    padding-left: 8px;
     font-weight: 900;
     font-size: 44px;
     line-height: 44px;
@@ -35,7 +38,7 @@
     text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.logo__descr {
+.logo-header__descr {
     font-weight: 400;
     font-size: 16px;
     line-height: 18px;

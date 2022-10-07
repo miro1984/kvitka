@@ -26,6 +26,22 @@ const scrollTop = () => {
 	});
 }
 
+//Select Language
+
+let lang = document.querySelectorAll('.lang__btn'); 
+let langActive = lang[0];
+
+for( let i = 0; i < lang.length; i++ ){
+
+  lang[i].addEventListener('click', function(){
+    langActive.classList.remove('active');
+    this.classList.add('active');
+    langActive = this; 
+  });
+};
+
+// Menu Burger
+
 burger.addEventListener('click', () => {
 	menu.classList.add('open');
 	overlay.classList.add('open');
@@ -67,14 +83,6 @@ phoneNumberBtn.forEach((item) => {
 	});
 });
 
-
-// Link to Viber Chat
-
-/* const viberLink = document.querySelector('.viber-link');
-
-viberLink.addEventListener('click', () => {
-	console.log(viberLink);
-}) */
 
 // Menu
 menu.addEventListener('click', (e) => {

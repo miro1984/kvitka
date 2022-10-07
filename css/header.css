@@ -46,13 +46,16 @@
 }
 
 .header__item svg {
+    background-color: #888888;
     fill: var(--white-color);
+    border-radius: 12px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
     transition: all .3s ease-in-out;
+
 }
 
 .header__link {
     display: block;
-
     margin-bottom: 4px;
 }
 
@@ -77,60 +80,74 @@
     text-align: right;
 }
 
-.header__logo {
+.logo-header {
     margin-bottom: 28px;
 }
 
-.header__lang {   
-    font-weight: 300;
-    font-size: 15px;
+.lang__list {
+    justify-content: flex-end;
+    align-items: center;
     color: var(--white-color);
-    text-transform: uppercase;
-    margin-bottom: 26px;
+    margin-bottom: 20px;
 }
 
-.header__lang span {
+.lang__btn {
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: var(--white-color);
+    transition: all .3s;
+}
+
+.lang__btn:hover {
     font-weight: 700;
-} 
+    transition: all .3s;
+}
 
 
+.lang__btn.active {
+    font-weight: 600;
+}
 
-/* .header__phone::before {
-    position: absolute;
-    content: "";
-    width: 16px;
-    height: 16px;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 0;
-    background-image: url("./../img/header/arrow-right.svg");
-} */
+.lang__item:last-child {
+    margin-left: 3px;
+}
+
+.lang__item:last-child::before {
+    content: "/";
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 18px;
+}
 
 .header__address {
     position: relative;
+    padding-left: 8px;
     font-size: 15px;
     color: var(--white-color);
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
-    padding-left: 16px;
-
     font-weight: 400;
-    font-size: 14.2px;
+    font-size: 16px;
     line-height: 17px;
-
     color: #FFFFFF;
-
-    /* text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5); */
-
-
 }
 
-/* .header__address::before {
-    position: absolute;
-    content: "";
+.header__address-wrapper svg {
+    display: inline-block;
     width: 12px;
-    height: 16px;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 0;
-    background-image: url("./../img/header/marker.svg");
-} */
+    height: 12px;
+    fill: var(--white-color);
+    transition: all .3s;
+}
+
+.header__address-wrapper:hover .header__address {
+    color: var(--accent-color);
+    transition: color .3s ease-in-out;
+}
+
+
+.header__address-wrapper:hover svg {
+    fill: var(--accent-color);
+
+}

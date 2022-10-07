@@ -1,0 +1,42 @@
+.location-container {
+    padding-top: 48px;
+    padding-bottom: 48px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.location__address {
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 16px;
+}
+
+.location__title {
+    font-weight: 600;
+    font-size: 24px;
+    color: var(--black-color);
+    margin-bottom: 32px;
+}
+
+.location__descr-content {
+    max-width: 500px;
+}
+
+
+.location__descr {
+    font-weight: 400;
+	font-size: 16px;
+	line-height: 20px;
+}
+
+.location__descr:first-child {
+    margin-bottom: 8px;
+}
+
+
+.location-route__item {
+    font-weight: 400;
+	font-size: 16px;
+	line-height: 20px;
+}
