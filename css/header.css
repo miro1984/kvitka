@@ -151,3 +151,55 @@
     fill: var(--accent-color);
 
 }
+
+
+.logo-center {
+    display: none;
+}
+
+
+
+@media (max-width: 888px) {
+
+    .header__address {
+        font-size: 14px;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .header__top {
+        margin-bottom: 0;
+        align-items: flex-end;
+    }
+
+    .header__right {
+        display: flex;
+    }
+
+    .header__list {
+        display: none;
+    }
+    .header__title {
+        display: none;
+    }
+
+/*     .header-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    } */
+
+    .logo {
+        margin: 0 !important;
+    }
+
+    .lang__item {
+        display: none;
+    }
+
+    .header__address-wrapper {
+        display: none;
+    }
+}

@@ -1,10 +1,19 @@
 
 .phone {
     display: flex;
+    justify-content: end;
     align-items: center;
     cursor: pointer;
     position: relative;
     padding-bottom: 8px;
+}
+
+.phone__icon {
+    width: 40px;
+    height: 40px;
+    
+    fill: var(--accent-color);
+    display: none;
 }
 
 .phone__text {
@@ -34,18 +43,10 @@
 
 .phone:hover .phone__icon-arrow {
     fill: var(--accent-color);
-/*     transform: rotate(90deg);
+    transform: rotate(90deg);
 	transition: all 0.3s;
-	transition: fill .3s ease-in-out, transform .3s; */
+	transition: fill .3s ease-in-out, transform .3s;
 }
-
-.nav__item:hover svg {
-		fill: var(--black-color);
-		transform: rotate(90deg);
-		transition: all 0.3s;
-		transition: fill .3s ease-in-out, transform .3s;
-	}
-
 
 .phone-list__item {
     position: relative;
@@ -119,3 +120,33 @@
     font-size: 18px;
     font-weight: 700;
 }
+
+
+
+@media (max-width: 888px) {
+
+    .phone__text {
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 768px) {
+    .phone {
+        padding-bottom: 0;
+    }
+    
+    .phone__icon {
+        display: block;
+        right: 0;
+        bottom: 0;
+    }
+
+    .phone__text {
+        display: none;
+    }
+
+    .phone__icon-arrow {
+        display: none;
+    }
+}
+
