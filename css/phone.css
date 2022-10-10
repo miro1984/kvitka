@@ -133,7 +133,7 @@
 @media (max-width: 768px) {
     .phone {
         padding-bottom: 0;
-        padding-left: 50px;
+        padding-left: 24px;
     }
 
     .phone__icon {
