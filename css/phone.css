@@ -62,7 +62,7 @@
 	position: absolute;
     padding: 8px 16px;
 	background-color: var(--white-color);
-	right: 0;
+    right: 0;
 	top: 100%;
 	display: flex;
 	flex-direction: column;
@@ -73,12 +73,13 @@
 	visibility: hidden;
 }
 
-.phone__list.active {
-	transform: translateX(-100%);
+/* .phone__list.active {
+	right: -15px;
 	transition: all 0.3s;
-}
+} */
 
 .phone__list.active {
+    right: 0;
 	opacity: 1;
 	visibility: visible;
 	display: block;
@@ -148,6 +149,13 @@
 
     .phone__icon-arrow {
         display: none;
+    }
+
+    .phone__list {
+        top: calc(100% + 15px);
+    }
+    .phone__list.active {
+    right: -15px;
     }
 }
 

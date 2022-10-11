@@ -1,3 +1,7 @@
+.header__nav {
+	margin-top: 15px;
+}
+
 .nav__list {
 	display: grid;
 	grid-template-columns: repeat(5 , 1fr);
@@ -13,7 +17,7 @@
 	border: 1px solid var(--white-color);
 	border-bottom: none;
     cursor: pointer;
-	transition: background .5s ease-in-out;
+	transition: all .5s;
 }
 
 .nav__item svg {
@@ -79,7 +83,7 @@
 
 .burger {
 	width: 30px;
-	height: 24px;
+	height: 30px;
 	cursor: pointer;
 	background-color: transparent;
 	border: none;
