@@ -148,7 +148,6 @@
 		transition: all 0.3s;
 		transition: fill .3s ease-in-out, transform .3s;
 	}
-
 	
 	.dropdown-list__link:hover {
 		font-size: 16px;
@@ -256,11 +255,6 @@
 		padding: 0;
 		border: none !important;
 	}
-
-/* 	.nav__list.transformation {
-		transform: translateX(-100%);
-		transition: all 0.3s;
-	} */
 
 	.nav__list.transformation {
 		transform: translateX(-100%);
