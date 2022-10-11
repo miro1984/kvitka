@@ -68,6 +68,11 @@ body {
 	margin: 0 auto;
 }
 
+.container__border-bottom  {
+	padding-bottom: 25px;
+	border-bottom: 1px solid #ACACAC;;
+}
+
 .hmain__title {
     margin-bottom: 12px;
     max-width: 600px;

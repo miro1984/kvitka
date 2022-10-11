@@ -56,6 +56,29 @@
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
 }
 
+
+@media (max-width: 500px) {
+
+    .logo-header svg {
+        width: 44px;
+        height: 44px;
+    }
+    .logo-header__title {
+
+        font-size: 34px;
+        line-height: 34px;
+        
+    }
+
+    .logo-header__descr { 
+        font-size: 12px;
+ 
+    }
+}
+
+
+
+
 /*----- Product -----*/
 
 

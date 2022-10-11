@@ -5,7 +5,7 @@
     align-items: center;
     cursor: pointer;
     position: relative;
-    padding-bottom: 8px;
+    margin-bottom: 8px;
 }
 
 .phone__icon {
@@ -133,14 +133,11 @@
 
 @media (max-width: 768px) {
     .phone {
-        padding-bottom: 0;
-        padding-left: 24px;
+        margin: 0 !important;
     }
 
     .phone__icon {
         display: block;
-        right: 0;
-        bottom: 0;
     }
 
     .phone__text {
@@ -154,6 +151,7 @@
     .phone__list {
         top: calc(100% + 15px);
     }
+
     .phone__list.active {
     right: -15px;
     }

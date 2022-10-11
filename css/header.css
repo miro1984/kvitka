@@ -10,13 +10,12 @@
 .header__top {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 8px;
 }
 
 .header__bottom {
     display: flex;
     justify-content: space-between;
-    
+    margin-bottom: 15px;
 }
 
 
@@ -42,7 +41,7 @@
 .header__list {
     
     display: inline-flex;
-    margin-left: -8px;
+    
 }
 
 .header__item {
@@ -182,6 +181,10 @@
     .header__top {
         margin-bottom: 0;
         align-items: flex-end;
+    }
+
+    .header__bottom {
+        margin-bottom: 0 !important;
     }
 
     .header__right {
