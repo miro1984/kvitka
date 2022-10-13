@@ -83,7 +83,7 @@
 }
 
 /* ----- Start   Header List for Mobile Device ----- */
-
+.mobile-header__list {
     padding: 16px;
     justify-content: space-between;
 }
