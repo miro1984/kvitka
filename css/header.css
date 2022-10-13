@@ -102,7 +102,7 @@
     height: 45px;
     border-radius: unset;
     background-color: transparent;
-    fill: var(--accent-color);
+    fill: var(--white-color);
     box-shadow: none;
 }
 
