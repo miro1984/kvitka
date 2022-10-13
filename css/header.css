@@ -86,20 +86,24 @@
 .mobile-header__list {
     padding: 16px;
     justify-content: space-between;
+    background-color: #888888;
 }
 
 .mobile-header__item {
-    width: 100%;
-    display: flex;
-}
-
-.mobile-header__icon {
-    background-color: transparent;
-    fill: var(--accent-color);
+   
 }
 
 .mobile-header__link {
+    margin: 0;
+}
 
+.mobile-header__icon {
+    width: 45px;
+    height: 45px;
+    border-radius: unset;
+    background-color: transparent;
+    fill: var(--accent-color);
+    box-shadow: none;
 }
 
 .mobile-header__descr {
@@ -213,10 +217,6 @@
 
     .header__right {
         display: flex;
-    }
-
-    .header__list {
-        /* display: none; */
     }
 
     .header__title {
