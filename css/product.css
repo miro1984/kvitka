@@ -12,8 +12,8 @@
 
 .product__list {
     display: grid;
-    grid-template-columns: repeat(auto-fit , minmax(320px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--grid-gap);
 }
 
 .product__item {
@@ -48,9 +48,22 @@
     color: var(--black-color);
 }
 
+@media (max-width: 1275px) {
+
+    .product__list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
+
+@media (max-width: 991px) {
+    .product__list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
 
 @media (max-width: 768px) {
-
     .product__img {
         width: 100%;
         max-height: 240px;
@@ -63,4 +76,10 @@
         font-size: 20px;
     }
 
+}
+
+@media (max-width: 460px) {
+    .product__list {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }

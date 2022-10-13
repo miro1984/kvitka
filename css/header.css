@@ -161,11 +161,9 @@
 
 }
 
-
 .logo-center {
     display: none;
 }
-
 
 
 @media (max-width: 888px) {
@@ -174,7 +172,6 @@
         font-size: 14px;
     }
 }
-
 
 @media (max-width: 768px) {
 
@@ -194,6 +191,7 @@
     .header__list {
         display: none;
     }
+
     .header__title {
         display: none;
     }

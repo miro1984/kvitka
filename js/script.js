@@ -110,23 +110,90 @@ menu.addEventListener('click', (e) => {
 
 
 
-//  Footer list
-const showMore = document.querySelectorAll('.show-more');
+// Footer List
+const windowInnerWidth = document.documentElement.clientWidth;
 
-showMore.forEach((item) => {
-	item.addEventListener('click', () => {
-		let parent = item.closest('.footer__content');
-		if (item.innerText == 'Все >') {
-			const array = Array.from(parent.querySelector('.footer__list').children);
-			array.forEach(el => el.classList.add('is-visible'));
-			item.innerText = 'Cкрыть';
-		} else {
-			const array = Array.from(parent.querySelector('.footer__list').children);
-			const visItems = array.slice(7, array.length);
-			visItems.forEach(el => el.classList.remove('is-visible'));
-			item.innerText = 'Все >';
-		}
+if (windowInnerWidth < 769) {
+
+	let footerProducts = document.querySelectorAll('.footer__product');
+
+		footerProducts.forEach((element) => {
+			element.classList.add('accordion__item');
 	});
-});
+
+	let footerContents = document.querySelectorAll('.footer__content');
+
+		footerContents.forEach((element) => {
+			element.classList.add('accordion__content');
+	});
 
 
+	let footerTitles = document.querySelectorAll('.footer__title-wrapper');
+
+		footerTitles.forEach((element) => {
+			element.classList.add('accordion__title');
+	});
+
+
+	let footerIcons = document.querySelectorAll('.accordion__icon');
+
+	footerIcons.forEach((element) => {
+		element.classList.add('mobile');
+	});
+
+
+// Footer List Accordion
+
+	let accordion = document.querySelector('.accordion');
+	let items = document.querySelectorAll('.accordion__item');
+	let title = document.querySelectorAll('.accordion__title');
+
+	const footerItems = document.querySelectorAll('.footer__item');
+		
+	footerItems.forEach((element) => {
+		element.classList.add('is-visible');
+	});
+	
+	const showMore = document.querySelectorAll('.show-more');
+
+	showMore.forEach((element) => {
+		element.classList.add('hide');
+	});
+	
+	function toggleAccordion() {
+	let thisItem = this.parentNode;
+	
+	items.forEach(item => {
+		if (thisItem == item ) {
+			thisItem.classList.toggle('active');
+			
+		return;
+		} 
+		item.classList.remove('active');
+	});
+	};
+
+	title.forEach(question => question.addEventListener('click', toggleAccordion));
+
+} else {
+
+	// Для десктопной версии с кнопкой "Показать ещё"
+
+	const showMore = document.querySelectorAll('.show-more');
+	
+	showMore.forEach((item) => {
+		item.addEventListener('click', () => {
+			let parent = item.closest('.footer__content');
+			if (item.innerText == 'Все >') {
+				const array = Array.from(parent.querySelector('.footer__list').children);
+				array.forEach(el => el.classList.add('is-visible'));
+				item.innerText = 'Cкрыть';
+			} else {
+				const array = Array.from(parent.querySelector('.footer__list').children);
+				const visItems = array.slice(7, array.length);
+				visItems.forEach(el => el.classList.remove('is-visible'));
+				item.innerText = 'Все >';
+			}
+		});
+	}); 
+}

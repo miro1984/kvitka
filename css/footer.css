@@ -1,13 +1,21 @@
 .footer {
-    margin-top: 40px;
     background-color: var(--black-color);
-    padding-top: 16px;
-    padding-bottom: 16px;
+    padding-top: 18px;
+    padding-bottom: 10px;
+}
+
+.footer__container {
+    padding: 0;
 }
 
 .footer__top {
+    padding: 0px 16px;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer__product {
     padding-bottom: 17px;
 }
 
@@ -30,10 +38,6 @@
     left: 0;
 }
 
-.footer__list {
-    margin-bottom: 8px;
-}
-
 .footer__item:nth-child(n + 7) {
 	display: none;
 }
@@ -50,6 +54,10 @@
     transition: color .3s ease-in-out;
 }
 
+.show-more.hide {
+    display: none;
+}
+
 .show-more:hover {
     color:  var(--accent-color);
 }
@@ -63,9 +71,15 @@
 }
 
 .footer__bottom {
+    padding: 0 16px;
     display: flex;
+    align-items: flex-end;
     justify-content: space-between;
 }
+
+ .footer__bottom-row {
+    padding-bottom: 8px;
+ }
 
 .footer__phones:last-child {
     margin-left: 30px;
@@ -73,7 +87,15 @@
 
 .footer__contacts {
     display: flex;
-    justify-content: space-between;
+    
+}
+
+.footer__name {
+    max-width: 194px;
+}
+
+.footer__address {
+    max-width: 120px;
 }
 
 .footer-text {
@@ -96,7 +118,58 @@
 }
 
 .footer__mode {
+    max-width: 152px;
     text-align: right;
 }
 
+@media (max-width: 860px) {
+    .footer__product {
+        padding-left: 25px;
+        width: 50%;
+    }
 
+    .footer__bottom {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer__name,
+    .footer__address  {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .footer__phones-right {
+        text-align: right;
+    }
+
+    .footer__mode {
+        max-width: 100%;
+        display: flex;
+    }
+
+    .footer__mode p:not(:last-child) {
+        margin-right: 4px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .footer__product {
+        
+        width: 100%;
+    }
+
+    .footer__top {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .footer__title {
+        margin: 0;
+    }
+
+    .footer__title::after {
+        display: none;  
+    }
+}

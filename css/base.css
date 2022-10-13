@@ -54,7 +54,7 @@ p,h1,h2,h3,h4,h5,h6 {
 	--black-color: #000;
 	--white-color: #FFF;
 	--grey-color: #F4F4F4;
-	--grid-gap: 40px;
+	--grid-gap: 30px;
 }
 
 body {
@@ -72,7 +72,7 @@ body {
 	border-bottom: 1px solid #ACACAC;;
 }
 
-.hmain__title {
+.main__title {
     margin-bottom: 12px;
     max-width: 600px;
     font-weight: 900;
