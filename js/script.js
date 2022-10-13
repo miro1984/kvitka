@@ -115,6 +115,52 @@ const windowInnerWidth = document.documentElement.clientWidth;
 
 if (windowInnerWidth < 769) {
 
+	
+	// Переносим header__list в header__nav
+	var parentElement = document.querySelector('.header__nav');
+	var theFirstChild = parentElement.firstChild;
+	var newElement = document.querySelector('.header__list');
+
+	parentElement.insertBefore(newElement, theFirstChild);
+	
+	// меняю классы для стилизации header__list для мобайл устройств
+
+	let headerList = document.querySelectorAll('.header__list');
+
+		headerList.forEach((element) => {
+			element.classList.add('mobile-header__list');
+	});
+
+	let headerItems = document.querySelectorAll('.header__item');
+
+		headerItems.forEach((element) => {
+			element.classList.add('mobile-header__item');
+	});
+
+
+	let headerIcons = document.querySelectorAll('.header__icon');
+
+		headerIcons.forEach((element) => {
+			element.classList.add('mobile-header__icon');
+	});
+
+	let headerLinks = document.querySelectorAll('.header__link');
+
+		headerLinks.forEach((element) => {
+			element.classList.add('mobile-header__link');
+	});
+
+	let headerDescr = document.querySelectorAll('.header__descr');
+
+	headerDescr.forEach((element) => {
+		element.classList.add('mobile-header__descr');
+	});
+
+	
+	
+
+	// добавляю классы для стилизации footer__product
+
 	let footerProducts = document.querySelectorAll('.footer__product');
 
 		footerProducts.forEach((element) => {

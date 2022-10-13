@@ -39,9 +39,7 @@
 
 
 .header__list {
-    
-    display: inline-flex;
-    
+    display: flex;
 }
 
 .header__item {
@@ -53,7 +51,7 @@
     transition: all .3s ease-in-out;
 }
 
-.header__item svg {
+.header__icon {
     background-color: #888888;
     fill: var(--white-color);
     border-radius: 12px;
@@ -67,7 +65,7 @@
     margin-bottom: 4px;
 }
 
-.header__item:hover svg {
+.header__item:hover .header__icon {
     fill: var(--accent-color);
 }
 
@@ -84,6 +82,35 @@
     transition: color .3s ease-in-out;
 }
 
+/* ----- Start   Header List for Mobile Device ----- */
+
+    padding: 16px;
+    justify-content: space-between;
+}
+
+.mobile-header__item {
+    width: 100%;
+    display: flex;
+}
+
+.mobile-header__icon {
+    background-color: transparent;
+    fill: var(--accent-color);
+}
+
+.mobile-header__link {
+
+}
+
+.mobile-header__descr {
+    display: none;
+}
+
+/* ----- End   Header List for Mobile Device ----- */
+
+.header__nav {
+    margin: 0 auto;
+}
 .header__right {
     text-align: right;
 }
@@ -189,7 +216,7 @@
     }
 
     .header__list {
-        display: none;
+        /* display: none; */
     }
 
     .header__title {
