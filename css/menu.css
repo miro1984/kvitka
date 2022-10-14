@@ -20,7 +20,7 @@
 	width: 14px;
 	height: 14px;
 	transition: transform 0.3s, color .3s ease-in-out;
-    fill: var(--white-color);
+    fill: var(--accent-color);
 }
 
 .nav__link {
@@ -220,6 +220,7 @@
 		fill: var(--black-color);
 	}
 	
+	
 	.nav__link,
 	.dropdown-submenu__list-item a,
 	.dropdown-list__link {
@@ -281,7 +282,7 @@
 		transition: all 0.3s;
 	}
 
-	.mobile-back a {
+	.mobile-back__link {
 		font-weight: 600;
 		color: var(--accent-color);
 		border: none;

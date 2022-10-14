@@ -99,11 +99,22 @@
     font-size: 21px;
 }
 
-.mobile-back__phone {
-    padding-left: 0;
-    padding-right: 0;
-    text-align: right;
+.mobile-close__phone {
+    position: absolute;
+    top: 0;
+    right: 282px;
+    padding: 0;
+    margin: 0;
+    background-color: #e9e9e9;
 }
+
+.close-icon {
+    display: block;
+    width: 45px;
+    height: 45px;
+    
+}
+
 
 .phone__btn {
     display: inline-block;
@@ -132,10 +143,6 @@
     font-weight: 700;
 }
 
-.close-icon {
-    display: block;
-    height: 32px;
-}
 
 @media (max-width: 888px) {
 
