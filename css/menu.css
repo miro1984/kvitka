@@ -1,3 +1,7 @@
+.header__nav {
+
+}
+
 .nav__list {
 	display: grid;
 	grid-template-columns: repeat(5 , 1fr);
@@ -20,7 +24,7 @@
 	width: 14px;
 	height: 14px;
 	transition: transform 0.3s, color .3s ease-in-out;
-    fill: var(--accent-color);
+    fill: var(--white-color);
 }
 
 .nav__link {
@@ -77,9 +81,19 @@
 	display: none;
 }
 
+
+.nav-close__link {
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	transform: translateX(100%);
+	background-color: var(--white-color);
+}
+
 .burger {
 	width: 30px;
-	height: 24px;
+	height: 30px;
 	cursor: pointer;
 	background-color: transparent;
 	border: none;
@@ -183,7 +197,7 @@
 	.nav {
 		position: fixed;
 		left: 0;
-		top: 0;
+		top: 92px;
 		max-width: 400px;
 		width: 80%;
 		height: 100vh;
@@ -191,17 +205,15 @@
 		box-shadow: 5px 0 15px -5px rgba(0,0,0, 0.8);
 		background-color: var(--white-color);
 		transform: translateX(-150vw);
-		overflow-x: hidden;
-		overflow-y: auto;
+/* 		overflow-x: hidden;
+		overflow-y: auto; */
 	}
 
 	.nav__list {
 		display: flex;
 		flex-direction: column;
 		align-items: flex-start;
-		padding: 0;
-		/* padding-top: 10%; */
-		position: relative;
+		padding: 0;	
 	}
 
 	.nav__item {

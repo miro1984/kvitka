@@ -62,6 +62,7 @@ const phoneBtn = document.querySelector('.phone');
 const phone = document.querySelector('.phone__list');
 
 phoneBtn.addEventListener('click', () => {
+	overlay.classList.add('open');
 	phone.classList.toggle('active');
 });
 
@@ -69,6 +70,7 @@ window.addEventListener('click', e => {
 	const target = e.target;
 	if (!target.closest('.phone__list') && !target.closest('.phone')) {
 		phone.classList.remove('active');
+		/* overlay.classList.remove('open'); */
 	}
 });
 
