@@ -82,6 +82,21 @@ body {
     text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+.section-title {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+    color: var(--black-color);
+}
+
+.section-pretitle {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FF0000;
+}
+
+
 .none {
 	display: none;
 }

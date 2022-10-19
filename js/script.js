@@ -245,3 +245,10 @@ if (windowInnerWidth < 769) {
 		});
 	}); 
 }
+
+
+// Калькулятор
+
+const printSize = document.querySelector('.calc__select-size');
+
+console.log(printSize);
