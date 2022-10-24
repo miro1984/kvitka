@@ -1,7 +1,9 @@
 const menu = document.querySelector('.nav'),
-			burger = document.querySelector('.burger'),
-			mobileBack = document.querySelector('.mobile-back'),
-			overlay = document.querySelector('.overlay');
+	burger = document.querySelector('.burger'),
+	mobileBack = document.querySelector('.mobile-back'),
+	overlay = document.querySelector('.overlay'),
+	closeBtn = document.querySelectorAll('.close-icon');
+	;
 
 
 
@@ -247,8 +249,49 @@ if (windowInnerWidth < 769) {
 }
 
 
-// Калькулятор
+// Swiper Слайдер
+/* 
+var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop: true,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+}); */
 
-const printSize = document.querySelector('.calc__select-size');
+// Carousel
+const owl = $('.owl-carousel');
 
-console.log(printSize);
+owl.owlCarousel({
+	center: true,
+	loop: true,
+	margin: 20,
+	startPosition: 0,
+	items: 1,
+	responsive: {
+		540: {
+			items: 2,
+			startPosition: 1,
+			margin: 10,
+		},
+		1200: {
+			items: 3,
+			margin: 30,
+		},
+	},
+});
+
+$('.slider__btn--prev').click(function () {
+	owl.trigger('prev.owl.carousel');
+});
+
+
+$('.slider__btn--next').click(function () {
+	owl.trigger('next.owl.carousel');
+});

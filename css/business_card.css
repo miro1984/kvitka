@@ -1,12 +1,29 @@
 .business-card__container {
     padding-top: 90px;
     padding-bottom: 90px;
+
+}
+
+.business-card__text {
+    width: 50%;
 }
 
 .business-card__title {
-
+    margin-bottom: 45px;
 }
 
 .business-card__pretitle {
     
+}
+
+.bussines-card__descr {
+    
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.business-card__slider {
+    flex-shrink: 0;
+    margin-bottom: 88px;
 }

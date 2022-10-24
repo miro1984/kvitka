@@ -106,13 +106,13 @@
     padding: 0;
     margin: 0;
     background-color: var(--white-color);
+    overflow: hidden;
 }
 
 .close-icon {
     display: block;
     width: 45px;
     height: 45px;
-    
 }
 
 
