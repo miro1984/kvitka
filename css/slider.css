@@ -54,7 +54,7 @@
 
 
 .swiper {
-	width: 900px;
+	max-width: 900px;
 	height: 505px;
 	padding: 50px;
 }
@@ -79,4 +79,16 @@
 
 .swiper-pagination-bullet {
 	background-color: var(--accent-color);
+}
+
+
+@media (max-width: 768px) {
+	.swiper {
+		width: 100%;
+		height: auto;
+	}
+
+	.swiper-button {
+		display: none;
+	}
 }
