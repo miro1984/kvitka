@@ -1,4 +1,3 @@
-
 .phone {
     display: flex;
     justify-content: end;
@@ -20,14 +19,14 @@
     font-weight: 600;
     font-size: 30px;
     color: var(--white-color);
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25); 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
     transition: color.3s ease-in-out;
 }
 
 .phone__icon-arrow {
     display: block;
-	width: 14px;
-	height: 14px;
+    width: 14px;
+    height: 14px;
     fill: var(--white-color);
     transition: fill .3s ease-in-out;
 }
@@ -43,33 +42,33 @@
 .phone:hover .phone__icon-arrow {
     fill: var(--accent-color);
     transform: rotate(90deg);
-	transition: all 0.3s;
-	transition: fill .3s ease-in-out, transform .3s;
+    transition: all 0.3s;
+    transition: fill .3s ease-in-out, transform .3s;
 }
 
 .phone-list__item {
     position: relative;
     width: 250px;
-	padding: 8px 0;	
-	box-sizing: border-box;
-	display: flex;
-	justify-content: flex-end;
+    padding: 8px 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-end;
     cursor: pointer;
 }
 
 .phone__list {
-	position: absolute;
+    position: absolute;
     padding: 8px 16px;
-	background-color: var(--white-color);
+    background-color: var(--white-color);
     right: 0;
-	top: 100%;
-	display: flex;
-	flex-direction: column;
-	box-shadow: 0 5px 15px 0 rgba(0,0,0, 0.2);
-	transition: all 0.3s;
+    top: 100%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.2);
+    transition: all 0.3s;
     z-index: 100;
-	opacity: 0;
-	visibility: hidden;
+    opacity: 0;
+    visibility: hidden;
 }
 
 /* .phone__list.active {
@@ -79,15 +78,16 @@
 
 .phone__list.active {
     right: 0;
-	opacity: 1;
-	visibility: visible;
-	display: block;
-	transform: none;
-	background-color: var(--white-color);
-	transition: all 0.3s;
+    opacity: 1;
+    visibility: visible;
+    display: block;
+    transform: none;
+    background-color: var(--white-color);
+    transition: all 0.3s;
 }
 
 .phone-list__link {
+    /* font-family: sans-serif; */
     padding-left: 8px;
     font-weight: 400;
     font-size: 18px;
@@ -120,7 +120,7 @@
     display: inline-block;
     width: 18px;
     height: 18px;
-    fill: 	#C8C8C8;
+    fill: #C8C8C8;
 }
 
 
@@ -130,7 +130,7 @@
 
 .phone__btns.active {
     opacity: 1;
-	visibility: visible;
+    visibility: visible;
 }
 
 
@@ -139,9 +139,11 @@
 }
 
 .phone-list__link:hover {
-    
+
     font-weight: 700;
 }
+
+
 
 
 @media (max-width: 888px) {
@@ -173,7 +175,6 @@
     }
 
     .phone__list.active {
-    right: -15px;
+        right: -15px;
     }
 }
-

@@ -266,7 +266,7 @@ var swiper = new Swiper(".mySwiper", {
 }); */
 
 // Carousel
-const owl = $('.owl-carousel');
+/* const owl = $('.owl-carousel');
 
 owl.owlCarousel({
 	center: true,
@@ -276,7 +276,7 @@ owl.owlCarousel({
 	items: 1,
 	responsive: {
 		540: {
-			items: 2,
+			items: 1,
 			startPosition: 1,
 			margin: 10,
 		},
@@ -294,4 +294,22 @@ $('.slider__btn--prev').click(function () {
 
 $('.slider__btn--next').click(function () {
 	owl.trigger('next.owl.carousel');
-});
+}); */
+
+
+//Swiper
+      var swiper = new Swiper(".mySwiper", {
+		spaceBetween: 48,
+		loop: true,
+        hashNavigation: {
+        watchState: true,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
