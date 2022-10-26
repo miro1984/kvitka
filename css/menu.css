@@ -311,4 +311,14 @@
 	.nav {
 		top: 90px;
 	}
+
+	.burger {
+		width: 26px;
+		height: 26px;
+	}
+
+	.burger::before,
+	.burger::after {
+		width: 36px;
+	}
 }

@@ -178,3 +178,17 @@
         right: -15px;
     }
 }
+
+
+@media (max-width: 380px) {
+
+    .phone__list {
+        top: calc(100% + 21px);
+    }
+
+    .phone__icon {
+        width: 36px;
+        height: 36px;
+        fill: var(--accent-color);
+    }
+}
