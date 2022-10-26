@@ -70,13 +70,13 @@
 }
 
 
-@media (max-width: 500px) {
+@media (max-width: 400px) {
 
-    .logo-header svg {
-        width: 44px;
-        height: 44px;
+    .logo-header__text {
+        display: none;
     }
 
+    /* 
     .logo-header__title {
         font-size: 34px;
         line-height: 34px;
@@ -85,7 +85,7 @@
     .logo-header__descr {
         font-size: 11px;
         letter-spacing: .4px;
-    }
+    } */
 }
 
 
