@@ -4,8 +4,9 @@
 @import "menu.css";
 @import "phone.css";
 @import "product.css";
-@import "../libs/slider/owl.carousel.min.css";
+
 @import "slider.css";
+@import "input.css";
 
 
 @import "business_card.css";
