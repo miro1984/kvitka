@@ -265,36 +265,7 @@ var swiper = new Swiper(".mySwiper", {
         },
 }); */
 
-// Carousel
-/* const owl = $('.owl-carousel');
 
-owl.owlCarousel({
-	center: true,
-	loop: true,
-	margin: 20,
-	startPosition: 0,
-	items: 1,
-	responsive: {
-		540: {
-			items: 1,
-			startPosition: 1,
-			margin: 10,
-		},
-		1200: {
-			items: 3,
-			margin: 30,
-		},
-	},
-});
-
-$('.slider__btn--prev').click(function () {
-	owl.trigger('prev.owl.carousel');
-});
-
-
-$('.slider__btn--next').click(function () {
-	owl.trigger('next.owl.carousel');
-}); */
 
 
 //Swiper
@@ -312,4 +283,34 @@ $('.slider__btn--next').click(function () {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
         },
-      });
+	  });
+	  
+// Form Input
+
+const inputBtn = document.querySelector('.input');
+const modalOverlay = document.querySelector('.modal-overlay ');
+const modals = document.querySelectorAll('.modal');
+
+/* btns.forEach((el) => { */
+	inputBtn.addEventListener('click', (e) => {
+		let path = e.currentTarget.getAttribute('data-path');
+
+		modals.forEach((el) => {
+			el.classList.remove('modal--visible');
+		});
+
+		document.querySelector(`[data-target="${path}"]`).classList.add('modal--visible');
+		modalOverlay.classList.add('modal-overlay--visible');
+	});
+/* }); */
+
+modalOverlay.addEventListener('click', (e) => {
+	console.log(e.target);
+
+	if (e.target == modalOverlay) {
+		modalOverlay.classList.remove('modal-overlay--visible');
+		modals.forEach((el) => {
+			el.classList.remove('modal--visible');
+		});
+	}
+});
