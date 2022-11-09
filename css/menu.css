@@ -322,3 +322,34 @@
 		width: 36px;
 	}
 }
+
+
+
+
+
+
+
+/*
+.dropdown-list__item {
+	position: relative;
+	overflow: hidden;
+}
+
+.dropdown-list__item::before {
+	position: absolute;
+	content: "";
+	background-color: var(--accent-color);
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	transform: translateX(-100%);
+	transition: all .3s;
+}
+
+.dropdown-list__item:hover::before {
+	transform: translateX(0);
+	transition: all .3s;
+}
+
+*/

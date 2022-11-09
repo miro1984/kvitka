@@ -102,11 +102,12 @@
     position: absolute;
     top: 0;
     left: 0;
-    transform: translateX(-100%);
+
     padding: 0;
     margin: 0;
     background-color: var(--white-color);
     overflow: hidden;
+    z-index: 99;
 }
 
 .close-icon {

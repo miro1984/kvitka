@@ -21,6 +21,7 @@ const initialMenu = () => {
 	scrollTop();
 }
 
+
 const scrollTop = () => {
 	menu.scrollTo({
 		top: 0,
@@ -70,9 +71,10 @@ phoneBtn.addEventListener('click', () => {
 
 window.addEventListener('click', e => {
 	const target = e.target;
+	
 	if (!target.closest('.phone__list') && !target.closest('.phone')) {
 		phone.classList.remove('active');
-		/* overlay.classList.remove('open'); */
+		overlay.classList.remove('open');
 	}
 });
 
@@ -97,7 +99,7 @@ menu.addEventListener('click', (e) => {
 		scrollTop();
 	}
 
-	if (e.target.classList.contains('mobile-back__link')) {
+	if (e.target.classList.contains('mobile-back__link') && e.target.classList.contains('input')) {
 		e.preventDefault();
 		e.target.closest('.nav__list--dropdown').classList.remove('transformation');
 		e.target.closest('.nav').querySelector('.nav__list').classList.remove('transformation');
@@ -110,6 +112,8 @@ menu.addEventListener('click', (e) => {
 		overlay.classList.remove('open');
 		unlockScroll();
 	}
+
+
 });
 
 
@@ -160,8 +164,6 @@ if (windowInnerWidth < 769) {
 		element.classList.add('mobile-header__descr');
 	});
 
-	
-	
 
 	// добавляю классы для стилизации footer__product
 
@@ -290,6 +292,7 @@ var swiper = new Swiper(".mySwiper", {
 const inputBtn = document.querySelector('.input');
 const modalOverlay = document.querySelector('.modal-overlay ');
 const modals = document.querySelectorAll('.modal');
+const modalClose = document.querySelector('.close-modal');
 
 /* btns.forEach((el) => { */
 	inputBtn.addEventListener('click', (e) => {
@@ -297,20 +300,33 @@ const modals = document.querySelectorAll('.modal');
 
 		modals.forEach((el) => {
 			el.classList.remove('modal--visible');
+			const headerNav = document.querySelector('.header__nav');
+			headerNav.classList.remove('open');
+			overlay.classList.remove('open');
 		});
 
 		document.querySelector(`[data-target="${path}"]`).classList.add('modal--visible');
 		modalOverlay.classList.add('modal-overlay--visible');
+
 	});
 /* }); */
+
+
 
 modalOverlay.addEventListener('click', (e) => {
 	console.log(e.target);
 
-	if (e.target == modalOverlay) {
+	if (e.target == modalOverlay || e.target == modalClose) {
 		modalOverlay.classList.remove('modal-overlay--visible');
 		modals.forEach((el) => {
 			el.classList.remove('modal--visible');
 		});
 	}
 });
+
+
+
+
+
+		// кнопка "Вход"
+
