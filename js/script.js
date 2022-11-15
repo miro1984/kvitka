@@ -289,28 +289,30 @@ var swiper = new Swiper(".mySwiper", {
 	  
 // Form Input
 
-const inputBtn = document.querySelector('.input');
+const inputBtns = document.querySelectorAll('.modal-btn');
 const modalOverlay = document.querySelector('.modal-overlay ');
 const modals = document.querySelectorAll('.modal');
 const modalClose = document.querySelector('.close-modal');
 
-/* btns.forEach((el) => { */
-	inputBtn.addEventListener('click', (e) => {
-		let path = e.currentTarget.getAttribute('data-path');
+console.log(modals);
 
+for (let i = 0; i < inputBtns.length; i++) {
+	inputBtns[i].addEventListener('click', (e) => {
+		let path = e.currentTarget.getAttribute('data-path');
+		console.log(path);
 		modals.forEach((el) => {
 			el.classList.remove('modal--visible');
 			const headerNav = document.querySelector('.header__nav');
 			headerNav.classList.remove('open');
 			overlay.classList.remove('open');
 		});
-
+		
+		
 		document.querySelector(`[data-target="${path}"]`).classList.add('modal--visible');
 		modalOverlay.classList.add('modal-overlay--visible');
 
 	});
-/* }); */
-
+};
 
 
 modalOverlay.addEventListener('click', (e) => {
@@ -324,8 +326,33 @@ modalOverlay.addEventListener('click', (e) => {
 	}
 });
 
+/*
+const inputBtns = document.querySelectorAll('.modal-btn');
+const modalOverlay = document.querySelector('.modal-overlay ');
+const modals = document.querySelectorAll('.modal');
+const modalClose = document.querySelector('.close-modal');
 
+console.log(modals);
 
+for (let i = 0; i < inputBtns.length; i++) {
+	inputBtns[i].addEventListener('click', (e) => {
+		let path = e.currentTarget.getAttribute('data-path');
+		console.log(path);
+		modals.forEach((el) => {
+			el.classList.remove('modal--visible');
+			const headerNav = document.querySelector('.header__nav');
+			headerNav.classList.remove('open');
+			overlay.classList.remove('open');
+		});
+		
+		
+		document.querySelector(`[data-target="${path}"]`).classList.add('modal--visible');
+		modalOverlay.classList.add('modal-overlay--visible');
+
+	});
+};
+
+*/
 
 
 		// кнопка "Вход"

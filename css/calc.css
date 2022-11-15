@@ -167,7 +167,7 @@
 
 @media (max-width: 440px) {
     .calc__col {
-        grid-template-columns: repeat(2, 180px);
+        grid-template-columns: repeat(2, minmax(160px, 190px));
         gap: 4px;
     }
 }
