@@ -45,7 +45,7 @@
 .card-inner__front {
     padding: 12px;
     justify-content: flex-start;
-    align-items: center;
+    /* align-items: center; */
 }
 
 .card-front {
@@ -128,4 +128,48 @@
     display: flex;
     flex-direction: column;
     align-content: center;
+}
+
+@media (max-width: 1100px) {
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+
+    .card {
+        height: 232px;
+        border-radius: 16px;
+        padding: 16px;
+    }
+
+    .card__img {
+        object-fit: cover;
+        width: 140px;
+        height: 140px;
+    }
+
+    .card__name {
+        margin-bottom: 20px;
+    }
+
+    .card__post {
+        margin-bottom: 16px;
+    }
+
+    .card-back {
+        transform: rotateY(0deg);
+        transform-style: unset;
+    }
+
+    .card-back__list {
+        margin: 0;
+        margin-top: 152px;
+    }
+
+    .card-back__item {
+        padding: 8px;
+        border-radius: 12px;
+    }
 }
