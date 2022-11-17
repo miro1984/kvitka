@@ -24,26 +24,6 @@
     align-items: center;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media (max-width: 1100px) {
-    .cards {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
 @media (min-width: 769px) {
     .card-wrapper:hover .card {
         transform: rotateY(-180deg);
