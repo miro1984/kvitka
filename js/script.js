@@ -383,7 +383,7 @@ const phoneMask = new IMask(phoneInput, {
 });
 
 phoneInput.addEventListener("input", phoneInputHandler);
-btn.addEventListener("click", btnHandler);
+//btn.addEventListener("click", btnHandler);
 
 
 function phoneInputHandler() {
