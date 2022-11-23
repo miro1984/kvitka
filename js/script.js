@@ -89,6 +89,26 @@ phoneNumberBtn.forEach((item) => {
 	});
 });
 
+// Search button
+
+const btnSearch = document.querySelector('.js-search-button');
+//const inputSearch = document.querySelector('.js-search-input');
+const labelSearch = document.querySelector('.js-search-label');
+
+btnSearch.addEventListener('click', () => {
+	if (labelSearch.classList.contains('open')) {
+		labelSearch.classList.remove('open');
+	} else {
+		labelSearch.classList.add('open');
+	}
+		
+	
+//	inputSearch.classList.add('open');
+});
+
+
+
+
 
 // Menu
 menu.addEventListener('click', (e) => {
@@ -98,13 +118,6 @@ menu.addEventListener('click', (e) => {
 		e.target.closest('.nav__item').querySelector('.nav__list--dropdown').classList.add('transformation');
 		scrollTop();
 	}
-
-// Вставить закрытие меню по клику на Вход или Обратный звонок
-
-
-
-
-
 
 	if (e.target.classList.contains('mobile-back__link') /* && e.target.classList.contains('input') */) {
 		e.preventDefault();
@@ -396,7 +409,7 @@ function phoneInputHandler() {
 
 
 //Swiper
-      var swiper = new Swiper(".mySwiper", {
+/*       var swiper = new Swiper(".mySwiper", {
 		spaceBetween: 48,
 		loop: true,
         hashNavigation: {
@@ -410,4 +423,5 @@ function phoneInputHandler() {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
         },
-	  });
+	  }); */
+	  
