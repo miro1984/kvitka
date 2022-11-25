@@ -270,64 +270,6 @@ if (windowInnerWidth < 769) {
 	}); 
 }
 
-
-// Swiper Слайдер
-/* 
-var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 1,
-    spaceBetween: 30,
-    loop: true,
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-}); */
-
-	  
-// Form Input
-
-/* const inputBtns = document.querySelectorAll('.modal-btn');
-const modalOverlay = document.querySelector('.modal-overlay ');
-const modals = document.querySelectorAll('.modal');
-const modalClose = document.querySelector('.close-modal');
-
-console.log(modals);
-
-for (let i = 0; i < inputBtns.length; i++) {
-	inputBtns[i].addEventListener('click', (e) => {
-		let path = e.currentTarget.getAttribute('data-path');
-		console.log(path);
-		modals.forEach((el) => {
-			el.classList.remove('modal--visible');
-			const headerNav = document.querySelector('.header__nav');
-			headerNav.classList.remove('open');
-			overlay.classList.remove('open');
-		});
-		
-		
-		document.querySelector(`[data-target="${path}"]`).classList.add('modal--visible');
-		modalOverlay.classList.add('modal-overlay--visible');
-
-	});
-};
-
-
-modalOverlay.addEventListener('click', (e) => {
-	console.log(e.target);
-
-	if (e.target == modalOverlay || e.target == modalClose) {
-		modalOverlay.classList.remove('modal-overlay--visible');
-		modals.forEach((el) => {
-			el.classList.remove('modal--visible');
-		});
-	}
-}); */
-
-
 // Modal Window
 
    var modalButtons = document.querySelectorAll('.open-modal'),
@@ -345,7 +287,7 @@ modalOverlay.addEventListener('click', (e) => {
         var modalId = this.getAttribute('data-modal'),
 			modalElem = document.querySelector('.modal[data-modal="' + modalId + '"]');
 		  
-//  Если нажатие вМобильном меню, то закрываем его
+//  Если нажатие в Мобильном меню, то закрываем его
 		menu.classList.remove('open');
 		overlay.classList.remove('active');
 
@@ -372,7 +314,6 @@ modalOverlay.addEventListener('click', (e) => {
     document.body.addEventListener('keyup', function (e) {
 
         if (e.key == 'Escape') {
-
             document.querySelector('.modal.active').classList.remove('active');
             document.querySelector('.overlay-modal').classList.remove('active');
         };
@@ -409,7 +350,7 @@ function phoneInputHandler() {
 
 
 //Swiper
-/*       var swiper = new Swiper(".mySwiper", {
+    var swiper = new Swiper(".mySwiper", {
 		spaceBetween: 48,
 		loop: true,
         hashNavigation: {
@@ -423,5 +364,5 @@ function phoneInputHandler() {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
         },
-	  }); */
+	  }); 
 	  
