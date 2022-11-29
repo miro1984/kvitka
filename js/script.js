@@ -91,24 +91,32 @@ phoneNumberBtn.forEach((item) => {
 
 // Search button
 
+const linkSearch = document.querySelector('.js-search-link');
 const btnSearch = document.querySelector('.js-search-button');
-//const inputSearch = document.querySelector('.js-search-input');
 const labelSearch = document.querySelector('.js-search-label');
+const btnCancel = document.querySelector('.js-cancel-button');
+const resultSearch = document.querySelector('.js-search-result');
 
-btnSearch.addEventListener('click', () => {
-	if (labelSearch.classList.contains('open')) {
-		labelSearch.classList.remove('open');
+linkSearch.addEventListener('click', () => {
+	if (labelSearch.classList.contains('active')) {
+		labelSearch.classList.remove('active');
 	} else {
-		labelSearch.classList.add('open');
+		overlay.classList.add('open');
+		labelSearch.classList.add('active');
+		btnCancel.classList.add('active');
 	}
-		
-	
-//	inputSearch.classList.add('open');
 });
 
 
+btnCancel.addEventListener('click', () => {
+	labelSearch.classList.remove('active');
+	btnCancel.classList.remove('active');
+	resultSearch.classList.remove('active');
+});
 
-
+btnSearch.addEventListener('click', () => {
+	resultSearch.classList.add('active');
+});
 
 // Menu
 menu.addEventListener('click', (e) => {
