@@ -6,13 +6,15 @@
     position: absolute;
     top: 0;
     right: 0;
-    transform: translateX(-200%);
+    /* transform: translateX(-200%); */
+    transform: translateY(-400%);
     transition: all .4s ease-in-out;
     z-index: 9999;
 }
 
 .search-label.active {
     transform: translateX(103%);
+    transform: translateY(140%);
     transition: all .4s ease-in-out;
 }
 
