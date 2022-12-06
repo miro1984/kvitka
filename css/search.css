@@ -13,7 +13,7 @@
 }
 
 .search-label.active {
-    transform: translateX(103%);
+    /* transform: translateX(103%); */
     transform: translateY(140%);
     transition: all .4s ease-in-out;
 }
