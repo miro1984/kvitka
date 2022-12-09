@@ -2,6 +2,7 @@
 @import "base.css";
 @import "header.css";
 @import "search.css";
+/* @import "search2.css"; */
 @import "menu.css";
 @import "phone.css";
 @import "product.css";
@@ -10,8 +11,9 @@
 
 @import "slider.css";
 @import "modal.css";
-@import "input.css";
 
+@import "input.css";
+@import "search.css";
 
 @import "business_card.css";
 @import "calc.css";

@@ -1,34 +1,23 @@
-.header__item-search {
-    position: relative;
+.modal__search {
+    top: 40%;
 }
 
-.search-label {
-    position: absolute;
-    top: 0;
-    right: 0;
-    /* transform: translateX(-200%); */
-    transform: translateY(-400%);
-    transition: all .4s ease-in-out;
-    z-index: 9999;
-}
-
-.search-label.active {
-    /* transform: translateX(103%); */
-    transform: translateY(140%);
-    transition: all .4s ease-in-out;
+.form__search {
+    width: 80vw;
+    max-width: 1180px;
 }
 
 .search-input {
     padding: 16px;
-    border-radius: 16px;
-    font-size: 16px;
-    border: 2px solid var(--accent-color);
+    border: none;
+    font-size: 18px;
+    border-bottom: 1px solid var(--accent-color);
     background-color: var(--white-color);
-    border-radius: 8px;
+    /* border-radius: 8px; */
     outline: none;
-    width: 400px;
+    width: 100%;
     height: 60px;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+    /* box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25); */
 }
 
 .search__field {
@@ -45,41 +34,22 @@
     align-items: center;
 }
 
-.search-button__icon {
-    width: 36px;
-    height: 36px;
-    fill: var(--accent-color);
-}
-
-.cancel-button {
-    position: absolute;
-    top: 50%;
-    right: -50px;
-    transform: translateY(-50%);
-    display: flex;
-    align-items: center;
-    display: none;
-}
-
-.cancel-button.active {
+.search-button.active {
     display: block;
 }
 
-.cancel-search__icon {
-    width: 50px;
-    height: 50px;
+.search-button__icon {
+    width: 32px;
+    height: 32px;
     fill: var(--accent-color);
 }
 
-
 .search__result {
-    position: fixed;
     width: 100%;
     margin-top: 16px;
     padding: 16px;
     background-color: var(--white-color);
     border-radius: 16px;
-    box-shadow: 0 10px 36px rgba(0, 0, 0, .25);
     display: none;
 }
 
@@ -98,29 +68,4 @@
 .search-result__item:hover {
     color: var(--accent-color);
     transition: color .3s ease-in-out;
-}
-
-@media (max-width: 940px) {
-
-    .search-label {
-        transform: translateY(-400%);
-    }
-
-    .search-label.active {
-        transform: translateY(140%);
-        transition: all .4s ease-in-out;
-    }
-
-}
-
-@media (max-width: 768px) {
-    .search-input {
-        width: 300px;
-    }
-}
-
-@media (max-width: 400px) {
-    .search-input {
-        width: 280px;
-    }
 }

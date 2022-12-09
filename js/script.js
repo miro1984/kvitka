@@ -89,34 +89,17 @@ phoneNumberBtn.forEach((item) => {
 	});
 });
 
-// Search button
+// Search 
 
-const linkSearch = document.querySelector('.js-search-link');
+
 const btnSearch = document.querySelector('.js-search-button');
-const labelSearch = document.querySelector('.js-search-label');
-const btnCancel = document.querySelector('.js-cancel-button');
 const resultSearch = document.querySelector('.js-search-result');
-
-linkSearch.addEventListener('click', () => {
-	if (labelSearch.classList.contains('active')) {
-		labelSearch.classList.remove('active');
-	} else {
-		overlay.classList.add('open');
-		labelSearch.classList.add('active');
-		btnCancel.classList.add('active');
-	}
-});
-
-
-btnCancel.addEventListener('click', () => {
-	labelSearch.classList.remove('active');
-	btnCancel.classList.remove('active');
-	resultSearch.classList.remove('active');
-});
 
 btnSearch.addEventListener('click', () => {
 	resultSearch.classList.add('active');
 });
+
+
 
 // Menu
 menu.addEventListener('click', (e) => {
