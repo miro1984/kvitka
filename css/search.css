@@ -58,7 +58,7 @@
 }
 
 .search-result__item:not(:last-child) {
-    margin-bottom: 8px;
+    margin-bottom: 12px;
 }
 
 .search-result__item {
@@ -68,4 +68,9 @@
 .search-result__item:hover {
     color: var(--accent-color);
     transition: color .3s ease-in-out;
+}
+
+.search-result__link {
+    font-weight: 500;
+    font-size: 16px;
 }
