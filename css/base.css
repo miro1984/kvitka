@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+
+.hover {
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+}
+
+.list-reset {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.btn-reset {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.table-reset {
+    margin: 0;
+    padding: 0;
+    background: none;
+    border: none;
+    border-collapse: collapse;
+    border-spacing: 0;
+    background-image: none;
+    text-align: center;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
+}
+
+.flex {
+    display: flex;
+}
+
+.row-reverse {
+    flex-direction: row-reverse;
+}
+
+.grid {
+    display: grid;
+}
+
+.center {
+    text-align: center;
+}
+
+.none {
+    display: none;
+}
+
+.hide {
+    display: none;
+}
+
+.grey {
+    background-color: var(--grey-color);
+}
+
+.container {
+    max-width: 1280px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.section-container {
+    padding-top: 48px;
+    padding-bottom: 48px;
+}
+
+.container__border-bottom {
+    padding-bottom: 25px;
+    border-bottom: 1px solid #ACACAC;
+}
+
+.main-title {
+    margin-bottom: 12px;
+    max-width: 600px;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 49px;
+    color: var(--white-color);
+    text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.section-title {
+    position: relative;
+    font-weight: 600;
+    font-size: 32px;
+    margin-bottom: 48px;
+    color: var(--black-color);
+}
+
+.section-title:after {
+    position: absolute;
+    content: "";
+    width: 400px;
+    height: 2px;
+    left: -32px;
+    bottom: -16px;
+    background-color: var(--accent-color);
+}
+
+.section-pretitle {
+    font-size: 14px;
+    line-height: 17px;
+    color: #FF0000;
+}

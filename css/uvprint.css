@@ -1,0 +1,189 @@
+.product-info-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--black-color);
+}
+
+.product-info-item {
+    display: flex;
+    align-items: center;
+}
+
+.product-info-item {
+    width: 50%;
+}
+
+.product-info-title {
+    margin-left: 24px;
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 59px;
+    text-transform: uppercase;
+}
+
+.product-info-item-description {
+    border-left: 2px solid var(--accent-color);
+    padding-left: 24px;
+}
+
+.product-info-image {
+    display: none;
+    width: 160px;
+    height: auto;
+    fill: var(--accent-color);
+}
+
+.product-description {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+/*------ Benefits Section------*/
+
+.product-benefits-list-item:last-child {
+    margin-top: 16px;
+}
+
+.product-benefits-list-item-text {
+    padding-left: 36px;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 27px;
+    position: relative;
+}
+
+.product-benefits-list-item-text:before {
+    position: absolute;
+    content: "";
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    left: 0;
+    top: 16px;
+    background-color: var(--accent-color);
+}
+
+/*------ Materials Section------*/
+
+.materials-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.materials-item {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--white-color);
+}
+
+.materials-item-text {
+    margin-bottom: 16px;
+}
+
+.materials-item-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+
+}
+
+.materials-list-item-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    position: relative;
+    margin-bottom: 24px;
+}
+
+.materials-list-item-title:after {
+    position: absolute;
+    content: "";
+    width: 120px;
+    height: 2px;
+    bottom: -12px;
+    left: 0;
+    background-color: var(--accent-color);
+}
+
+.materials-list-item-value {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.materials-list-item-value span {
+    font-weight: 500;
+    margin-right: 8px;
+}
+
+.materials-item-img {
+    width: 260px;
+    height: auto;
+    overflow: hidden;
+}
+
+.materials-item-image {
+    width: 100%;
+    height: 100%;
+    vertical-align: bottom;
+    object-fit: cover;
+    transition: all .5s;
+}
+
+.materials-item:hover .materials-item-image {
+    transform: scale(1.1);
+}
+
+.materials-list-item-action {
+    margin-top: auto;
+}
+
+.materials-list-item-link {
+    box-sizing: border-box;
+    border: 1px solid var(--black-color);
+    border-radius: 12px;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+}
+
+.materials-list-item-link:hover {
+    border: 1px solid var(--white-color);
+    color: var(--white-color);
+    background-color: var(--black-color);
+}
+
+/*------ Why We Section------*/
+
+.whywe-list-item {
+    position: relative;
+}
+
+.whywe-list-item:before {
+    position: absolute;
+    content: "";
+    width: 12px;
+    height: 12px;
+    left: 0;
+    top: 20px;
+    transform: translateY(-50%);
+    background-color: var(--accent-color);
+}
+
+.whywe-list-item-text {
+    padding-left: 36px;
+    font-size: 20px;
+    line-height: 40px;
+}
+
+.product-examples-slider-image {
+    border-radius: 0 !important;
+
+}
+
+.product-table-description {
+    margin-bottom: 32px;
+}

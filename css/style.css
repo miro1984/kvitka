@@ -1,0 +1,67 @@
+@import "normalize.css";
+
+@import "fonts.css";
+@import "base.css";
+
+/*--- Pages ----*/
+@import "main-page.css";
+@import "business-card.css";
+@import "uvprint.css";
+@import "profile.css";
+
+
+/*--- Components ----*/
+@import"logo.css";
+@import "menu.css";
+@import "phone.css";
+@import "slider.css";
+@import "modal.css";
+@import "form.css";
+@import "accordion.css";
+@import "calc.css";
+@import "price-table.css";
+
+
+/*--- Section ----*/
+@import "product.css";
+@import "team.css";
+@import "howmakeorder.css";
+@import "requirements.css";
+@import "contacts.css";
+
+
+
+
+
+/*--- Media Breakpoints's ----*/
+@import "media.css";
+
+
+
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --accent-color: #B3DC72;
+    --black-color: #000;
+    --white-color: #FFF;
+    --grey-color: #F4F4F4;
+    --dark-grey-color: #282828;
+    --grid-gap: 30px;
+    --index: calc(1vw + 1vh);
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    scroll-behavior: smooth;
+}

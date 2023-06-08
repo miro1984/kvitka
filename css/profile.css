@@ -1,0 +1,266 @@
+.profile-container {
+    padding-top: 40px;
+    padding-bottom: 64px;
+}
+
+.profile__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile__title {
+    margin-bottom: 32px;
+    font-weight: 600;
+    font-size: 24px;
+    color: var(--black-color);
+}
+
+.profile__title span {
+    margin-left: 16px;
+}
+
+.profile__top {
+    padding-left: 32px;
+    padding-right: 32px;
+
+}
+
+.profile__descr {}
+
+.list-reset {}
+
+.profile__descr-list {}
+
+.profile__descr-item {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.profile__btn {
+    padding: 4px 12px;
+    border-radius: 6px;
+    background-color: var(--accent-color);
+    margin-left: 16px;
+    transition: all .3s ease;
+}
+
+.profile__btn:hover {
+    background-color: var(--black-color);
+    color: var(--white-color);
+
+}
+
+.profile__descr-item span {
+    font-weight: 600;
+    margin-left: 16px;
+}
+
+.profile__nav {}
+
+.profile__nav-list {
+    text-align: right;
+}
+
+.profile__nav-item {}
+
+.profile__nav-item:not(:last-child) {
+    margin-bottom: 8px;
+}
+
+.profile__nav-link {
+    font-weight: 400;
+    font-size: 20px;
+    color: var(--black-color);
+}
+
+.profile__nav-link.active {
+    font-weight: 600;
+}
+
+.profile__body {}
+
+.profile__body-item {}
+
+.profile__body-descr {
+    font-weight: 400;
+    margin-bottom: 24px;
+}
+
+.profile__table {
+    margin-bottom: 64px;
+}
+
+.profile__table-list {}
+
+.profile__table-item {
+    display: flex;
+    gap: 8px;
+    align-items: flex-start;
+}
+
+.profile__table-item:not(:last-child) {
+    margin-bottom: 4px;
+}
+
+.profile__table-name {
+    font-size: 16px;
+    padding: 8px 16px;
+    flex: 0 1 260px;
+    color: var(--white-color);
+    background-color: var(--black-color);
+    border: 1px solid var(--black-color);
+}
+
+.profile__table-value {
+    padding: 8px 16px;
+    flex: 0 1 450px;
+    border: 1px solid var(--black-color);
+}
+
+.profile__table-value::placeholder {
+    color: var(--black-color);
+}
+
+.profile__table-edit {
+    margin-left: 12px;
+    max-width: 320px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: var(--black-color);
+}
+
+.profile__table-edit a {
+    color: #0747f7;
+}
+
+.profile__table-buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+}
+
+
+.profile__table-button {
+    box-sizing: border-box;
+    width: 150px;
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: 1px solid var(--black-color);
+    transition: all .4s ease;
+}
+
+.profile__table-button:hover {
+    color: var(--white-color);
+    background-color: var(--black-color);
+}
+
+.profile__body-descr a {
+    color: #0747f7;
+}
+
+
+/*----- Order List -----*/
+
+.profile__order-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 16px;
+}
+
+.order-table__checkbox {
+    background-color: white;
+}
+
+.profile__order-period {
+    display: flex;
+    align-items: center;
+}
+
+.profile__order-period-range {
+    margin-left: 24px;
+}
+
+.profile__order-table {
+    margin-bottom: 32px;
+}
+
+.order-table__header {}
+
+.order-table__item {
+    padding: 8px 16px;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+    border: 1px solid var(--black-color);
+}
+
+.order-table__item.black {
+    color: var(--white-color);
+    background-color: var(--black-color);
+}
+
+
+.js-profile-link-active {
+    font-weight: 700;
+    transition: all .2s;
+}
+
+/*-----  Order Table Description  -----*/
+
+.order-table__info {}
+
+.order-table__info-item {
+    display: flex;
+    align-items: center;
+}
+
+.order-table__info-square {
+    width: 30px;
+    height: 30px;
+    display: block;
+    border: 1px solid var(--black-color);
+}
+
+.order-table__info-description {
+    position: relative;
+    font-size: 16px;
+    line-height: 34px;
+    padding-left: 36px;
+}
+
+.order-table__info-description::before {
+    position: absolute;
+    content: "";
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 14px;
+    height: 1px;
+    background-color: var(--black-color);
+}
+
+/*-----  Order Status  -----*/
+
+.waiting {
+    background-color: #f3f3f3;
+}
+
+.calculated {
+    background-color: #c0e5ff;
+}
+
+.working {
+    background-color: #fffeb0;
+}
+
+.ready {
+    background-color: #e2ffd7;
+}
+
+.notpaid {
+    background-color: #fce0f4;
+}

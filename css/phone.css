@@ -1,0 +1,112 @@
+.phone {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    margin-bottom: 8px;
+}
+
+.phone__icon {
+    width: 40px;
+    height: 40px;
+    fill: var(--accent-color);
+    display: none;
+}
+
+.phone__text {
+    padding-left: 4px;
+    font-weight: 600;
+    font-size: 30px;
+    color: var(--white-color);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+    transition: color.3s ease-in-out;
+}
+
+.phone__icon-arrow {
+    display: block;
+    width: 14px;
+    height: 14px;
+    fill: var(--white-color);
+    transition: all 0.3s;
+}
+
+.phone-list__item {
+    position: relative;
+    width: 250px;
+    padding: 8px 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer;
+}
+
+.phone__list {
+    position: absolute;
+    padding: 8px 16px;
+    background-color: var(--white-color);
+    right: 0;
+    top: 120%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.2);
+    transition: all 0.3s;
+    z-index: 100;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.phone__list.active {
+    right: 0;
+    opacity: 1;
+    visibility: visible;
+    display: block;
+    transform: none;
+    background-color: var(--white-color);
+    transition: all 0.3s;
+}
+
+.phone-list__link {
+    font-family: sans-serif;
+    padding-left: 8px;
+    font-weight: 400;
+    font-size: 18px;
+    transition: color .5s linear;
+}
+
+.phone-number {
+    font-size: 21px;
+}
+
+.close-icon {
+    display: block;
+    width: 45px;
+    height: 45px;
+}
+
+
+.phone__btn {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    fill: #C8C8C8;
+}
+
+
+.phone__btn:not(:last-child) {
+    margin-right: 16px;
+}
+
+.phone__btns.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+.phone__btns svg {
+    fill: var(--black-color);
+}
+
+.phone-list__link:hover {
+    font-weight: 700;
+}
