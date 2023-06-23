@@ -84,6 +84,8 @@
         visibility: visible;
         display: block;
     }
+
+
 }
 
 
@@ -348,6 +350,11 @@
     .product__list {
         grid-template-columns: repeat(2, 1fr);
     }
+
+        .howmakeorder-content {
+    grid-template-columns: repeat(2, 1fr);
+}
+
 
     /*---------- Footer  ----------*/
 

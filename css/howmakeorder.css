@@ -1,37 +1,50 @@
 .howmakeorder-content {
+    padding-top: 48px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 32px;
 }
 
 .howmakeorder-content-item {
+    padding-top: 64px;
     background-color: var(--grey-color);
+    position: relative;
+    border-radius: 16px;
 }
 
 .howmakeorder-content-header {
-    padding: 0 16px;
+    padding: 16px;
     display: flex;
     align-items: center;
     border-bottom: 2px solid var(--accent-color);
-    margin-bottom: 32px;
+    /* margin-bottom: 32px; */
 }
 
 .howmakeorder-content-pretitle {
+    padding: 16px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
     font-weight: 600;
     font-size: 80px;
-    margin-right: 24px;
+    /* margin-right: 24px; */
     color: var(--accent-color);
+    background-color: var(--white-color);
+    border-radius: 50%;
+    
+        box-shadow: 0px 6px 35px rgba(0, 0, 0, 0.1);
 }
 
 .howmakeorder-content-title {
-    font-weight: 500;
-    font-size: 24px;
+    font-weight: 600;
+    font-size: 28px;
     margin-bottom: 8px;
 
 }
 
 .howmakeorder-content-subtitle {
-    font-weight: 500;
+    font-weight: 400;
     font-size: 16px;
 }
 
