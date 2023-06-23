@@ -351,9 +351,9 @@
         grid-template-columns: repeat(2, 1fr);
     }
 
-        .howmakeorder-content {
-    grid-template-columns: repeat(2, 1fr);
-}
+    .howmakeorder-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
 
 
     /*---------- Footer  ----------*/
@@ -402,7 +402,8 @@
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .materials-list {
+    .materials-list,
+    .howmakeorder-content {
         grid-template-columns: repeat(1, 1fr);
     }
 
