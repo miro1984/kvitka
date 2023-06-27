@@ -1,0 +1,62 @@
+.howmakeorder-content-item {
+    padding: 16px 0;
+    border-bottom: 1px solid var(--accent-color);
+}
+.howmakeorder-content-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.howmakeorder-content-pretitle {
+    
+    font-weight: 600;
+    font-size: 64px;
+    margin-right: 20px;
+    color: var(--accent-color);
+}
+
+.howmakeorder-content-descr {
+    margin-left: 32px;
+    margin-right: auto;
+}
+.howmakeorder-content-title {
+    font-weight: 500;
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+.howmakeorder-content-subtitle {
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.howmakeorder-content-icon {
+    fill: var(--accent-color);
+    transition: all .5s;
+}
+
+.howmakeorder-content-icon.open {
+    transform: rotate(180deg);
+}
+
+.howmakeorder-content-list {
+    display: none;
+    border-top-right-radius: 16px;
+    border-bottom-left-radius: 16px;
+    margin-top: 16px;
+    background-color: var(--grey-color);
+
+}
+
+.howmakeorder-content-list.open {
+    display: block;
+}
+
+.howmakeorder-content-list-item {
+    border-bottom: 1px solid var(--white-color);
+    padding: 16px;
+    font-weight: 500;
+    font-size: 16px;
+}

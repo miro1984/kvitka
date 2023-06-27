@@ -1,0 +1,44 @@
+.payment {
+}
+
+.section-text {
+    margin-bottom: 32px;
+}
+.payment-content {
+    
+}
+
+.payment-content-item:not(:last-child) {
+    margin-bottom: 24px;
+}
+
+.payment-content-title {
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 16px;
+}
+
+.payment-item {
+    position: relative;
+    padding-left: 16px;
+    font-size: 16px;
+}
+
+.payment-item::before {
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 6px;
+    border-radius: 2px;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: var(--accent-color);
+}
+
+
+
+
+.payment-item:not(:last-child) {
+    margin-bottom: 8px;
+}

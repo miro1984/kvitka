@@ -3,7 +3,7 @@ const menu = document.querySelector('.nav'),
 	mobileBack = document.querySelector('.mobile-back'),
 	overlay = document.querySelector('.overlay'),
 	closeBtn = document.querySelectorAll('.close-icon');
-	
+
 
 
 const lockScroll = () => {
@@ -30,16 +30,16 @@ const scrollTop = () => {
 
 //Select Language
 
-let lang = document.querySelectorAll('.lang__btn'); 
+let lang = document.querySelectorAll('.lang__btn');
 let langActive = lang[0];
 
-for( let i = 0; i < lang.length; i++ ){
+for (let i = 0; i < lang.length; i++) {
 
-  lang[i].addEventListener('click', function(){
-    langActive.classList.remove('active');
-    this.classList.add('active');
-    langActive = this; 
-  });
+	lang[i].addEventListener('click', function () {
+		langActive.classList.remove('active');
+		this.classList.add('active');
+		langActive = this;
+	});
 };
 
 // Menu Burger
@@ -48,7 +48,7 @@ burger.addEventListener('click', () => {
 	phoneBtn.classList.remove('active');
 	phone.classList.remove('active');
 	overlay.classList.remove('open');
-	
+
 
 	burger.classList.toggle('active');
 	menu.classList.toggle('open');
@@ -83,7 +83,7 @@ phoneBtn.addEventListener('click', () => {
 
 window.addEventListener('click', e => {
 	const target = e.target;
-	
+
 	if (!target.closest('.phone__list') && !target.closest('.phone')) {
 		phoneBtn.classList.remove('active');
 		phone.classList.remove('active');
@@ -135,27 +135,27 @@ menu.addEventListener('click', (e) => {
 const windowInnerWidth = document.documentElement.clientWidth;
 
 if (windowInnerWidth < 769) {
-	
-	
+
+
 	// добавляю классы для стилизации footer__product
 
 	let footerProducts = document.querySelectorAll('.footer__product');
 
-		footerProducts.forEach((element) => {
-			element.classList.add('accordion__item');
+	footerProducts.forEach((element) => {
+		element.classList.add('accordion__item');
 	});
 
 	let footerContents = document.querySelectorAll('.footer__content');
 
-		footerContents.forEach((element) => {
-			element.classList.add('accordion__content');
+	footerContents.forEach((element) => {
+		element.classList.add('accordion__content');
 	});
 
 
 	let footerTitles = document.querySelectorAll('.footer__title-wrapper');
 
-		footerTitles.forEach((element) => {
-			element.classList.add('accordion__title');
+	footerTitles.forEach((element) => {
+		element.classList.add('accordion__title');
 	});
 
 
@@ -166,35 +166,35 @@ if (windowInnerWidth < 769) {
 	});
 
 
-// Footer List Accordion
+	// Footer List Accordion
 
 	let accordion = document.querySelector('.accordion');
 	let items = document.querySelectorAll('.accordion__item');
 	let title = document.querySelectorAll('.accordion__title');
 
 	const footerItems = document.querySelectorAll('.footer__item');
-		
+
 	footerItems.forEach((element) => {
 		element.classList.add('is-visible');
 	});
-	
+
 	const showMore = document.querySelectorAll('.show-more');
 
 	showMore.forEach((element) => {
 		element.classList.add('hide');
 	});
-	
+
 	function toggleAccordion() {
-	let thisItem = this.parentNode;
-	
-	items.forEach(item => {
-		if (thisItem == item ) {
-			thisItem.classList.toggle('active');
-			
-		return;
-		} 
-		item.classList.remove('active');
-	});
+		let thisItem = this.parentNode;
+
+		items.forEach(item => {
+			if (thisItem == item) {
+				thisItem.classList.toggle('active');
+
+				return;
+			}
+			item.classList.remove('active');
+		});
 	};
 
 	title.forEach(question => question.addEventListener('click', toggleAccordion));
@@ -204,7 +204,7 @@ if (windowInnerWidth < 769) {
 	// Для десктопной версии с кнопкой "Показать ещё"
 
 	const showMore = document.querySelectorAll('.show-more');
-	
+
 	showMore.forEach((item) => {
 		item.addEventListener('click', () => {
 			let parent = item.closest('.footer__content');
@@ -219,45 +219,45 @@ if (windowInnerWidth < 769) {
 				item.innerText = 'Все >';
 			}
 		});
-	}); 
+	});
 }
 
 
 // Переносим header__list в header__nav
 
 if (windowInnerWidth < 992) {
-	
+
 	var parentElement = document.querySelector('.header__nav');
 	var theFirstChild = parentElement.firstChild;
 	var newElement = document.querySelector('.header__list');
 
 	parentElement.insertBefore(newElement, theFirstChild);
-	
+
 	// меняю классы для стилизации header__list для мобайл устройств
 
 	let headerList = document.querySelectorAll('.header__list');
 
-		headerList.forEach((element) => {
-			element.classList.add('mobile-header__list');
+	headerList.forEach((element) => {
+		element.classList.add('mobile-header__list');
 	});
 
 	let headerItems = document.querySelectorAll('.header__item');
 
-		headerItems.forEach((element) => {
-			element.classList.add('mobile-header__item');
+	headerItems.forEach((element) => {
+		element.classList.add('mobile-header__item');
 	});
 
 
 	let headerIcons = document.querySelectorAll('.header__icon');
 
-		headerIcons.forEach((element) => {
-			element.classList.add('mobile-header__icon');
+	headerIcons.forEach((element) => {
+		element.classList.add('mobile-header__icon');
 	});
 
 	let headerLinks = document.querySelectorAll('.header__link');
 
-		headerLinks.forEach((element) => {
-			element.classList.add('mobile-header__link');
+	headerLinks.forEach((element) => {
+		element.classList.add('mobile-header__link');
 	});
 
 	let headerDescr = document.querySelectorAll('.header__descr');
@@ -269,59 +269,59 @@ if (windowInnerWidth < 992) {
 
 // Modal Window
 
-   var modalButtons = document.querySelectorAll('.open-modal'),
-       modalOverlay = document.querySelector('.overlay-modal'),
-       closeButtons = document.querySelectorAll('.modal-close');
+var modalButtons = document.querySelectorAll('.open-modal'),
+	modalOverlay = document.querySelector('.overlay-modal'),
+	closeButtons = document.querySelectorAll('.modal-close');
 
 
-   modalButtons.forEach(function(item){
+modalButtons.forEach(function (item) {
 
-     
-    item.addEventListener('click', function(e) {
 
-        e.preventDefault();
+	item.addEventListener('click', function (e) {
 
-        var modalId = this.getAttribute('data-modal'),
+		e.preventDefault();
+
+		var modalId = this.getAttribute('data-modal'),
 			modalElem = document.querySelector('.modal[data-modal="' + modalId + '"]');
-		  
-//  Если нажатие в Мобильном меню, то закрываем его
+
+		//  Если нажатие в Мобильном меню, то закрываем его
 		menu.classList.remove('open');
 		overlay.classList.remove('active');
 		burger.classList.remove('active');
 
-        modalElem.classList.add('active');
-        modalOverlay.classList.add('active');
-      }); 
+		modalElem.classList.add('active');
+		modalOverlay.classList.add('active');
+	});
 
-   }); 
-
-
-   closeButtons.forEach(function(item){
-
-      item.addEventListener('click', function(e) {
-         var parentModal = this.closest('.modal');
-		 e.preventDefault();
-         parentModal.classList.remove('active');
-         modalOverlay.classList.remove('active');
-      });
-
-   }); 
+});
 
 
-    document.body.addEventListener('keyup', function (e) {
+closeButtons.forEach(function (item) {
 
-        if (e.key == 'Escape') {
-            document.querySelector('.modal.active').classList.remove('active');
-            document.querySelector('.overlay-modal').classList.remove('active');
-        };
-    }, false);
+	item.addEventListener('click', function (e) {
+		var parentModal = this.closest('.modal');
+		e.preventDefault();
+		parentModal.classList.remove('active');
+		modalOverlay.classList.remove('active');
+	});
+
+});
+
+
+document.body.addEventListener('keyup', function (e) {
+
+	if (e.key == 'Escape') {
+		document.querySelector('.modal.active').classList.remove('active');
+		document.querySelector('.overlay-modal').classList.remove('active');
+	};
+}, false);
 
 
 modalOverlay.addEventListener('click', function () {
-		
-        document.querySelector('.modal.active').classList.remove('active');
-        this.classList.remove('active');
-    });
+
+	document.querySelector('.modal.active').classList.remove('active');
+	this.classList.remove('active');
+});
 
 
 // Маска телефона
@@ -330,18 +330,18 @@ let phoneInput = document.querySelector(".phone__callback");
 let btn = document.querySelector(".btn__callback");
 
 const phoneMask = new IMask(phoneInput, {
-  mask: "+{38} (000) 000-00-00",
+	mask: "+{38} (000) 000-00-00",
 });
 
 phoneInput.addEventListener("input", phoneInputHandler);
 
 
 function phoneInputHandler() {
-  if (phoneMask.masked.isComplete) {
-    btn.classList.add("active");
-  } else {
-    btn.classList.remove("active");
-  }
+	if (phoneMask.masked.isComplete) {
+		btn.classList.add("active");
+	} else {
+		btn.classList.remove("active");
+	}
 };
 
 
@@ -349,10 +349,10 @@ function phoneInputHandler() {
 /* 	  
 
 let pageId = document.querySelector("[data-id-page]").getAttribute("data-id-page"),
-            navItem = document.querySelector(`[data-id-nav=${pageId}]`);
+			navItem = document.querySelector(`[data-id-nav=${pageId}]`);
 
-        if(pageId == navItem.getAttribute("data-id-nav")) {
-            navItem.classList.add("active-desktop-link");
+		if(pageId == navItem.getAttribute("data-id-nav")) {
+			navItem.classList.add("active-desktop-link");
 }
 		 */
 
@@ -362,13 +362,13 @@ const profileLink = document.querySelectorAll('.js-profile-link');
 let profileLinkActive = document.querySelector('.js-profile-link-active');
 
 
-for( let i = 0; i < profileLink.length; i++ ){
+for (let i = 0; i < profileLink.length; i++) {
 
 	profileLink[i].addEventListener('click', function () {
-    profileLinkActive.classList.remove('js-profile-link-active');
-    this.classList.add('js-profile-link-active');
-    profileLinkActive = this;
-  });
+		profileLinkActive.classList.remove('js-profile-link-active');
+		this.classList.add('js-profile-link-active');
+		profileLinkActive = this;
+	});
 };
 
 
@@ -379,7 +379,7 @@ const materialLink = document.querySelectorAll('.js-material-link');
 for (let i = 0; i < materialLink.length; i++) {
 	materialLink[i].addEventListener('click', function () {
 
-		document.getElementById('calculate').scrollIntoView({behavior: 'smooth'});
+		document.getElementById('calculate').scrollIntoView({ behavior: 'smooth' });
 	})
 }
 
@@ -387,13 +387,37 @@ for (let i = 0; i < materialLink.length; i++) {
 
 /* const smoothLinks = document.querySelectorAll("a[href^='#']");
 for (let smoothLink of smoothLinks) {
-    smoothLink.addEventListener("click", function (e) {
-        e.preventDefault();
-        const id = smoothLink.getAttribute("href");
+	smoothLink.addEventListener("click", function (e) {
+		e.preventDefault();
+		const id = smoothLink.getAttribute("href");
 
-        document.querySelector(id).scrollIntoView({
-            behavior: "smooth",
-            block: "start"
-        });
-    });
+		document.querySelector(id).scrollIntoView({
+			behavior: "smooth",
+			block: "start"
+		});
+	});
 }; */
+
+
+// How Make Order Accordion
+
+const howmakeorderLink = document.querySelectorAll('.js-howmakeorder-link');
+let howmakeorderContent = document.querySelectorAll('.js-howmakeorder-content');
+let howmakeorderIcon = document.querySelectorAll('.js-howmakeorder-icon');
+
+
+for (let i = 0; i < howmakeorderLink.length; i++) {
+
+
+	howmakeorderLink[i].addEventListener('click', function () {
+		howmakeorderContent[i].classList.toggle('open');
+		howmakeorderIcon[i].classList.toggle('open');
+	});
+
+
+	/* 	profileLink[i].addEventListener('click', function () {
+			profileLinkActive.classList.remove('js-profile-link-active');
+			this.classList.add('js-profile-link-active');
+			profileLinkActive = this;
+		}); */
+};
