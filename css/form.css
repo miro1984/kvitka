@@ -395,7 +395,7 @@
 
 .form-button-secondary {
     width: 100%;
-    padding: 16px 32px;
+    padding: 16px;
     border: 1px solid var(--accent-color);
     background-color: var(--white-color);
     color: var(--black-color);
@@ -467,6 +467,6 @@
 
 @media (max-width: 400px) {
     .form-container {
-        max-width: 320px;
+        max-width: 350px;
     }
 }
