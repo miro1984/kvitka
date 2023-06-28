@@ -253,3 +253,111 @@
     font-weight: 500;
     font-size: 16px;
 }
+
+
+
+
+/*----- Form Login -----*/
+.form-container {
+    width: 800px;
+    height: 500px;
+    padding: 40px 0;
+    position: relative;
+}
+
+.form-block {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background-color: var(--accent-color);
+}
+
+.form-block-item {
+    text-align: center;
+    width: 50%;
+    padding: 16px;
+}
+
+.form-block-title {
+    font-weight: 500;
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+
+.form-block-btn {
+    padding: 16px 32px;
+    outline: none;
+    border: none;
+    background-color: var(--white-color);
+    color: var(--black-color);
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: .3s;
+    text-align: center;
+}
+
+.form-block-btn:hover {
+    box-shadow: 0 10px 36px rgba(0, 0, 0, .25);
+}
+
+
+.form-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 50%;
+    background-color: var(--white-color);
+    transition: .5s ease-in-out;
+    display: flex;
+    overflow: hidden;
+}
+
+.form-box.active {
+    left: 50%;
+}
+
+.form-login {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding: 32px;
+    background-color: var(--white-color);
+    transition: .5s;
+}
+
+.form-signin {
+    left: 0;
+    transition-delay: .25s;
+}
+
+.form-signup {
+    left: 100%;
+    transition-delay: 0;
+}
+
+.form-box.active .form-signin {
+    left: -100%;
+    transition-delay: 0;
+}
+
+.form-box.active .form-signup {
+    left: 0;
+    transition-delay: .25s;
+}
+
+.form-reset-btn {
+    margin-bottom: 16px;
+}
+
+.form-item {
+    position: relative;
+    height: 48px;
+    margin-bottom: 8px;
+}
+
+.form-btns {
+    margin-bottom: 16px;
+}

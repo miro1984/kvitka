@@ -414,10 +414,21 @@ for (let i = 0; i < howmakeorderLink.length; i++) {
 		howmakeorderIcon[i].classList.toggle('open');
 	});
 
-
-	/* 	profileLink[i].addEventListener('click', function () {
-			profileLinkActive.classList.remove('js-profile-link-active');
-			this.classList.add('js-profile-link-active');
-			profileLinkActive = this;
-		}); */
 };
+
+
+
+// Login Modal
+
+const signInBtn = document.querySelector('.js-signin-button');
+const signUpBtn = document.querySelector('.js-signup-button');
+const formBox = document.querySelector('.js-form-box');
+
+
+signUpBtn.addEventListener('click', function () {
+	formBox.classList.add('active');
+});
+
+signInBtn.addEventListener('click', function () {
+	formBox.classList.remove('active');
+});
