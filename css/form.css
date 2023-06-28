@@ -8,7 +8,7 @@
     position: relative;
     width: 320px;
     padding: 48px 32px;
-    border-radius: 16px;
+    /* border-radius: 16px; */
     box-shadow: 0 10px 25px rgba(92, 99, 105, .2);
     background-color: var(--white-color);
 }
@@ -56,7 +56,7 @@
     height: 100%;
     font-size: 16px;
     border: 1px solid var(--accent-color);
-    border-radius: 8px;
+    /* border-radius: 8px; */
     outline: none;
     padding: 16px;
     background: none;
@@ -91,7 +91,7 @@
     background-color: var(--accent-color);
     color: var(--black-color);
     font-size: 16px;
-    border-radius: 8px;
+    /* border-radius: 8px; */
     cursor: pointer;
     transition: .3s;
     text-align: center;
@@ -116,7 +116,7 @@
 }
 
 .form__button-primary:hover {
-    box-shadow: 0 10px 36px rgba(0, 0, 0, .25);
+    box-shadow: 0 5px 18px rgba(0, 0, 0, .10);
 }
 
 .form__input:focus+.form__label {
@@ -260,7 +260,7 @@
 /*----- Form Login -----*/
 .form-container {
     width: 800px;
-    height: 500px;
+    height: 600px;
     padding: 40px 0;
     position: relative;
 }
@@ -291,14 +291,14 @@
     background-color: var(--white-color);
     color: var(--black-color);
     font-size: 16px;
-    border-radius: 8px;
+    /* border-radius: 8px; */
     cursor: pointer;
     transition: .3s;
     text-align: center;
 }
 
 .form-block-btn:hover {
-    box-shadow: 0 10px 36px rgba(0, 0, 0, .25);
+    /* box-shadow: 0px 4px 6px -2px rgba(0, 0, 0, 0.05), 0px 10px 15px -3px rgba(0, 0, 0, 0.10); */
 }
 
 
@@ -323,7 +323,7 @@
     top: 0;
     width: 100%;
     height: 100%;
-    padding: 32px;
+    padding: 48px;
     background-color: var(--white-color);
     transition: .5s;
 }
@@ -348,16 +348,118 @@
     transition-delay: .25s;
 }
 
-.form-reset-btn {
-    margin-bottom: 16px;
+.form-title {
+    padding-top: 24px;
+    font-weight: 600;
+    font-size: 24px;
+    margin-bottom: 32px;
 }
 
 .form-item {
     position: relative;
     height: 48px;
-    margin-bottom: 8px;
+    margin-bottom: 16px;
+}
+
+.form-action {
+    padding-top: 22px;
+}
+
+.form-item-checkbox {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin-bottom: 16px;
+}
+
+.form-item-checkbox label {
+    margin-left: 8px;
 }
 
 .form-btns {
+    padding-top: 16px;
     margin-bottom: 16px;
+}
+
+.form-sign-button {
+    margin-bottom: 40px;
+}
+
+.form-reset-btn {
+    padding-top: 8px;
+    border-top: 1px solid var(--black-color);
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.form-button-secondary {
+    width: 100%;
+    padding: 16px 32px;
+    border: 1px solid var(--accent-color);
+    background-color: var(--white-color);
+    color: var(--black-color);
+    font-size: 16px;
+    cursor: pointer;
+    transition: .3s;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.form-button-secondary:hover {
+    border: 1px solid var(--black-color);
+}
+
+
+.input-social-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+}
+
+@media (max-width: 992px) {
+    .form-container {
+        max-width: 400px;
+        height: 700px;
+        padding: 0;
+        margin: 0 20px;
+    }
+
+    .form-title {
+        
+    }
+
+    .form-block {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .form-block-item {
+        width: 100%;
+        padding: 30px 0;
+    }
+
+    .form-login {
+        padding: 20px 40px;
+
+    }
+
+    .form-sign-button {
+        margin-bottom: 20px;
+    }
+
+    .form-box {
+        width: 100%;
+        height: 550px;
+        box-shadow: none;
+
+        top: 0;
+    }
+
+    .form-box.active {
+        top: 150px;
+        left: 0;
+    }
 }
