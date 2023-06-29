@@ -20,7 +20,8 @@
                 </button>
                 <div class="header__top">
                     <a href="index.html" class="header__title">
-                        Широкоформатная Цифровая <span>печать</span>
+                        <p><span>Печать</span> цифровая <span>и</span></p>
+                        <p class="letter-spacing-1">широкоформатная</p>                         
                     </a>
                     <a href="index.html" class="logo logo-header">
                         <svg version="1.1" id="Шар_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -262,7 +263,26 @@
         </header>
 
         <main class="main">
-<!------ Main Section ------>               
+<!------ Main Page ------>   
+
+<!------ Breadcrumb Nav ------>   
+        <div class="breadcrumb grey">
+            <div class="container">
+                <ul class="list-reset breadcrumb-list">
+                    <li class="breadcrumb-item"><a href="index.html" class="breadcrumb-link">
+                        <img src="img/icons/home-icon.svg" alt="" class="home-icon">
+                        </a></li>
+                    <li class="breadcrumb-item">
+                        <img src="img/icons/arrow-right-icon.svg" alt="" class="breadcrumb-icon">
+                        <a href="#" class="breadcrumb-link">Широкоформатная печать</a></li>
+                    <li class="breadcrumb-item">
+                        <img src="img/icons/arrow-right-icon.svg" alt="" class="breadcrumb-icon">
+                        <span>УФ печать</span>
+                    </li>
+                </ul>
+            </div>
+        </div>     
+<!------ Breadcrumb Nav End ------>         
             <section class="product-info__section product-info-section">
                 <div class="container section-container">
                     <div class="product-info-wrapper">
@@ -297,7 +317,7 @@
                                     <p class="materials-list-item-value"><span>Срок:</span> от 2 часов</p>
                                 </div>                        
                                 <div class="materials-list-item-action">
-                                    <button class="btn-reset materials-list-item-link js-material-link">Заказать</button>
+                                    <button class="btn-reset materials-list-item-link js-material-link">Просчитать</button>
                                 </div>
                             </div>
                             <div class="materials-item-img">
@@ -312,7 +332,7 @@
                                     <p class="materials-list-item-value"><span>Срок:</span> от 2 часов</p>
                                 </div>                            
                                 <div class="materials-list-item-action">
-                                    <button class="btn-reset materials-list-item-link js-material-link">Заказать</button>
+                                    <button class="btn-reset materials-list-item-link js-material-link">Просчитать</button>
                                 </div>
                             </div>
                             <div class="materials-item-img">
@@ -328,7 +348,7 @@
                                     <p class="materials-list-item-value"><span>Срок:</span> от 2 часов</p>
                                 </div>                            
                                 <div class="materials-list-item-action">
-                                    <button class="btn-reset materials-list-item-link js-material-link">Заказать</button>
+                                    <button class="btn-reset materials-list-item-link js-material-link">Просчитать</button>
                                 </div>
                             </div>
                             <div class="materials-item-img">
@@ -343,7 +363,7 @@
                                     <p class="materials-list-item-value"><span>Срок:</span> от 2 часов</p>
                                 </div>
                                 <div class="materials-list-item-action">
-                                    <button class="btn-reset materials-list-item-link js-material-link">Заказать</button>
+                                    <button class="btn-reset materials-list-item-link js-material-link">Просчитать</button>
                                 </div>
                             </div>
                             <div class="materials-item-img">
@@ -358,7 +378,7 @@
                                     <p class="materials-list-item-value"><span>Срок:</span> от 2 часов</p>
                                 </div>
                                 <div class="materials-list-item-action">
-                                    <button class="btn-reset materials-list-item-link js-material-link">Заказать</button>
+                                    <button class="btn-reset materials-list-item-link js-material-link">Просчитать</button>
                                 </div>
                             </div>
                             <div class="materials-item-img">
@@ -626,47 +646,104 @@
 
                 </div>
 			
+                <!------ Login Modal ------> 
                 <div class="l-form modal" data-modal="4">
-                    <form action="" class="form">
-                        <button class="btn-reset form-close__btn modal-close">
-                            <svg class="close-icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M777.856 280.192l-33.92-33.952-231.872 231.872-231.84-231.872-33.984 33.888 231.872 231.904-231.84 231.84 33.888 33.984 231.904-231.904 231.84 231.872 33.952-33.888-231.872-231.904z"/>
-                            </svg>
-                        </button>
-                        <h2 class="form__title">Вход<br>в личный кабинет</h2>
-
-                        <div class="form__div">
-                            <input type="text" class="form__input" placeholder=" ">
-                            <label for="" class="form__label">E-mail или Название</label>
+                    <div class="form-container">
+                        <div class="form-block">
+                            <section class="form-block-item">
+                                <h2 class="form-block-title">У Вас уже есть аккаунт?</h2>
+                                <button class="btn-reset form-block-btn js-signin-button">Войти</button>
+                            </section>
+                            <section class="form-block-item">
+                                <h2 class="form-block-title">У Вас нет аккаунта?</h2>
+                                <button class="btn-reset form-block-btn js-signup-button">Зарегистрироваться</button>
+                            </section>
                         </div>
 
-                        <div class="form__div">
-                            <input type="password" class="form__input" placeholder=" ">
-                            <label for="" class="form__label">Пароль</label>
+                        <div class="form-box js-form-box">
+
+                            <!-- Login Form -->
+                            <form action="#" class="form-login form-signin">
+                                <button class="btn-reset form-close__btn modal-close">
+                                    <svg class="close-icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M777.856 280.192l-33.92-33.952-231.872 231.872-231.84-231.872-33.984 33.888 231.872 231.904-231.84 231.84 33.888 33.984 231.904-231.904 231.84 231.872 33.952-33.888-231.872-231.904z"/>
+                                    </svg>
+                                </button>
+                                <h3 class="form-title">Вход</h3>
+                                <div class="form-item">
+                                    <input type="text" class="form__input" placeholder=" ">
+                                    <label for="" class="form__label">Телефон или E-mail</label>
+                                </div>
+                                <div class="form-item">
+                                    <input type="password" class="form__input" placeholder=" ">
+                                    <label for="" class="form__label">Пароль</label>
+                                </div>
+                                <div class="form-action">
+                                    <div class="form-item form-item-checkbox">
+                                        <input type="checkbox" id="rememberme" name="rememberme">
+                                        <label for="rememberme">Запомнить меня</label>
+                                    </div>
+                                    <button class="btn-reset form__button-primary form-sign-button js-login-button">Войти</button>
+                                    <a href="#" class="form__button-secondary form-reset-btn">Забыли пароль?</a>
+                                    <button class="btn-reset form-button-secondary form-sign-button">
+                                        <img src="./img/input/google-icon.svg" alt="" class="input-social-icon">
+                                        Продолжить с GOOGLE
+                                    </button>
+                                </div>
+                            </form>
+
+
+                            <!-- Registration Form -->
+                            <form action="#" class="form-login form-signup">
+                                    <button class="btn-reset form-close__btn modal-close">
+                                        <svg class="close-icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M777.856 280.192l-33.92-33.952-231.872 231.872-231.84-231.872-33.984 33.888 231.872 231.904-231.84 231.84 33.888 33.984 231.904-231.904 231.84 231.872 33.952-33.888-231.872-231.904z"/>
+                                        </svg>
+                                    </button>
+                                <h3 class="form-title">Регистрация</h3>
+                                <div class="form-item">
+                                    <input type="text" class="form__input" placeholder=" ">
+                                    <label for="" class="form__label">Имя</label>
+                                </div>
+                                <div class="form-item">
+                                    <input type="tel" class="form__input" placeholder=" ">
+                                    <label for="" class="form__label">Телефон</label>
+                                </div>
+                                <div class="form-item">
+                                    <input type="email" class="form__input" placeholder=" ">
+                                    <label for="" class="form__label">E-mail</label>
+                                </div>
+                                <!-- <div class="form-item">
+                                    <input type="password" class="form__input" placeholder=" ">
+                                    <label for="" class="form__label">Пароль</label>
+                                </div> -->
+                                <div class="form-action">
+                                    <button class="btn-reset form__button-primary form-sign-button js-register-button">Регистрация</button>
+                                    <button class="btn-reset form-button-secondary form-sign-button">
+                                        <img src="./img/input/google-icon.svg" alt="" class="input-social-icon">
+                                        Регистрация с  GOOGLE
+                                    </button>
+                                </div>
+                            </form>
                         </div>
-                        <div class="form__btns">
-                            <ul class="list-reset input__list">
-                                <li class="input__item">
-                                    <input type="submit" class="form__button-secondary" value="Восстановить пароль">
-                                    <input type="submit" class="form__button-secondary" value="Создать новый профиль">
-                                </li>
-                            </ul>
-                            <a href="profile.html" class="form__button-primary">Войти</a>
-                            <!-- <input type="submit" class="form__button-primary" value="Войти"> -->
+
+                        <div class="form-success-block js-form-success">                            
+                            <div class="form-success-login js-success-login">
+                                <div class="form-success-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12 1C5.925 1 1 5.925 1 12C1 18.075 5.925 23 12 23C18.075 23 23 18.075 23 12C23 5.925 18.075 1 12 1ZM16.768 10.14C16.8558 10.0396 16.9226 9.92274 16.9646 9.79617C17.0065 9.6696 17.0227 9.53591 17.0123 9.40298C17.0018 9.27005 16.9648 9.14056 16.9036 9.02213C16.8423 8.90369 16.758 8.79871 16.6555 8.71334C16.5531 8.62798 16.4346 8.56396 16.3071 8.52506C16.1796 8.48616 16.0455 8.47316 15.9129 8.48683C15.7802 8.50049 15.6517 8.54055 15.5347 8.60463C15.4178 8.66872 15.3149 8.75554 15.232 8.86L10.932 14.019L8.707 11.793C8.5184 11.6108 8.2658 11.51 8.0036 11.5123C7.7414 11.5146 7.49059 11.6198 7.30518 11.8052C7.11977 11.9906 7.0146 12.2414 7.01233 12.5036C7.01005 12.7658 7.11084 13.0184 7.293 13.207L10.293 16.207C10.3913 16.3052 10.5089 16.3818 10.6384 16.4321C10.7679 16.4823 10.9065 16.505 11.0453 16.4986C11.184 16.4923 11.32 16.4572 11.4444 16.3954C11.5688 16.3337 11.6791 16.2467 11.768 16.14L16.768 10.14Z"/>
+                                    </svg>
+                                </div>
+                                <h3 class="form-success-title">Вы успешно вошли!</h3>
+                            </div>
+                            <div class="form-success-register js-success-register">
+                                <div class="form-success-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12 1C5.925 1 1 5.925 1 12C1 18.075 5.925 23 12 23C18.075 23 23 18.075 23 12C23 5.925 18.075 1 12 1ZM16.768 10.14C16.8558 10.0396 16.9226 9.92274 16.9646 9.79617C17.0065 9.6696 17.0227 9.53591 17.0123 9.40298C17.0018 9.27005 16.9648 9.14056 16.9036 9.02213C16.8423 8.90369 16.758 8.79871 16.6555 8.71334C16.5531 8.62798 16.4346 8.56396 16.3071 8.52506C16.1796 8.48616 16.0455 8.47316 15.9129 8.48683C15.7802 8.50049 15.6517 8.54055 15.5347 8.60463C15.4178 8.66872 15.3149 8.75554 15.232 8.86L10.932 14.019L8.707 11.793C8.5184 11.6108 8.2658 11.51 8.0036 11.5123C7.7414 11.5146 7.49059 11.6198 7.30518 11.8052C7.11977 11.9906 7.0146 12.2414 7.01233 12.5036C7.01005 12.7658 7.11084 13.0184 7.293 13.207L10.293 16.207C10.3913 16.3052 10.5089 16.3818 10.6384 16.4321C10.7679 16.4823 10.9065 16.505 11.0453 16.4986C11.184 16.4923 11.32 16.4572 11.4444 16.3954C11.5688 16.3337 11.6791 16.2467 11.768 16.14L16.768 10.14Z"/>
+                                    </svg>
+                                </div>
+                                <h3 class="form-success-title">Вы успешно зарегистрированы!</h3>                                
+                            </div>
                         </div>
-                        <h3 class="form__subtitle">Или войдите,<br>используя социальные сети:</h3>
-                        <ul class="list-reset input-social__list">
-                            <li class="input-social__item">
-                                <a href="#" class="input-social__link">
-                                    <img src="./img/input/facebook-icon.svg" alt="" class="input-social__icon">
-                                </a>
-                            </li>
-                            <li class="input-social__item">
-                                <a href="#" class="input-social__link">
-                                    <img src="./img/input/google-icon.svg" alt="" class="input-social__icon">
-                                </a>
-                            </li>
-                        </ul>
-                    </form>
+                    </div>
                 </div>
                 
                 <div class="l-form modal" data-modal="5">

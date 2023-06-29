@@ -432,3 +432,24 @@ signUpBtn.addEventListener('click', function () {
 signInBtn.addEventListener('click', function () {
 	formBox.classList.remove('active');
 });
+
+
+// Modal Window about Succes LogIn/Registration 
+
+const buttonLogIn = document.querySelector('.js-login-button');
+const buttonRegister = document.querySelector('.js-register-button');
+const formSuccess = document.querySelector('.js-form-success');
+
+const windowSuccessLogIn = document.querySelector('.js-success-login');
+const windowSuccessRegister = document.querySelector('.js-success-register');
+
+
+buttonLogIn.addEventListener('click', function () {
+	formSuccess.classList.add('active');
+	windowSuccessLogIn.classList.add('active');
+});
+
+buttonRegister.addEventListener('click', function () {
+	formSuccess.classList.add('active');
+	windowSuccessRegister.classList.add('active');
+});

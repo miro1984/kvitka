@@ -1,0 +1,30 @@
+.breadcrumb {
+    padding: 16px 0;
+}
+
+.breadcrumb-list {
+    display: flex;
+    align-items: center;
+}
+
+.breadcrumb-item {
+    display: flex;
+    align-items: center;
+}
+
+.breadcrumb-link,
+.breadcrumb-item span {
+    font-weight: 500;
+    font-size: 16px;    
+    color: var(--black-color);
+}
+
+.breadcrumb-item span {
+    font-weight: 600;
+}
+
+.breadcrumb-icon {
+    
+    height: 12px;
+    margin: 0 12px;
+}

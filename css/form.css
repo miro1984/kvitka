@@ -60,7 +60,7 @@
     outline: none;
     padding: 16px;
     background: none;
-    z-index: 10;
+    /* z-index: 10; */
 }
 
 .form__label {
@@ -270,6 +270,7 @@
     display: flex;
     align-items: center;
     background-color: var(--accent-color);
+    z-index: 1;
 }
 
 .form-block-item {
@@ -417,6 +418,72 @@
     height: 24px;
     margin-right: 8px;
 }
+
+.form-success-block {
+    position: absolute;
+    padding: 64px;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-300%);
+    background-color: var(--white-color);
+    transition: 0.5s ease;
+    z-index: 31;
+/*     visibility: hidden;
+    opacity: 0; */
+}
+
+.form-success-block.active {
+/*     visibility: visible;
+    opacity: 1; */
+    transform: translate(-50%,-50%);
+}
+
+.form-success-login,
+.form-success-register {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-success-login {
+    display: none;
+}
+
+.form-success-login.active {
+    display: flex;
+}
+
+.form-success-register {
+    display: none;
+}
+
+.form-success-register.active {
+    display: flex;
+}
+
+
+
+.form-success-icon {
+    margin-bottom: 64px;
+}
+
+.form-success-icon svg {
+    width: 120px;
+    height: 120px;
+    fill: var(--accent-color);
+}
+
+.form-success-title {
+    font-weight: 500;
+    font-size: 32px;
+}
+
+
+
 
 @media (max-width: 992px) {
     .form-container {
