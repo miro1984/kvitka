@@ -3,24 +3,26 @@
 @import "fonts.css";
 @import "base.css";
 
-/*--- Pages ----*/
-@import "main-page.css";
-@import "business-card.css";
-@import "uvprint.css";
-@import "profile.css";
-
 
 /*--- Components ----*/
 @import "breadcrumb.css";
 @import "logo.css";
 @import "menu.css";
 @import "phone.css";
-@import "slider.css";
+/* @import "slider.css"; */
 @import "modal.css";
 @import "form.css";
 @import "accordion.css";
 @import "calc.css";
 @import "price-table.css";
+
+
+/*--- Pages ----*/
+@import "main-page.css";
+@import "business-card.css";
+@import "uvprint.css";
+@import "profile.css";
+@import "calculator.css";
 
 
 /*--- Section ----*/

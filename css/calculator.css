@@ -1,0 +1,20 @@
+.calculator-wrapper {
+	display: flex;
+    gap: 32px;
+    height: 80vh;
+}
+
+.calculator-item {
+    width: 50%;
+}
+
+.calculator-section-title {
+    font-weight: 600;
+    font-size: 32px;
+    margin-bottom: 24px;
+}
+
+.calculator-section-description {
+    font-size: 16px;
+    line-height: 1.2;
+}

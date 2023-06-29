@@ -24,7 +24,28 @@
 }
 
 .breadcrumb-icon {
-    
+    width: 10px;
     height: 12px;
     margin: 0 12px;
+}
+
+
+
+@media (max-width: 432px) {
+    .breadcrumb-link,
+    .breadcrumb-item span {
+        font-weight: 500;
+        font-size: 14px;    
+        color: var(--black-color);
+    }
+
+    .home-icon {
+        height: 16px;
+    }
+
+    .breadcrumb-icon {
+        width: auto;
+        height: 8px;
+        margin: 0 6px;
+    }
 }
