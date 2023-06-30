@@ -13,12 +13,12 @@
     padding: 8px 16px;
     font-size: 16px;
     font-weight: 400;
-    border: 1px solid #c5c5c5;
+    border: 1px solid var(--black-color);
 }
 
 .black {
-    color: var(--white-color);
-    background-color: var(--black-color);
+    color: var(--black-color);
+    background-color: #D9D9D9;
 }
 
 .price-table__item-select {

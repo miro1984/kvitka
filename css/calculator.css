@@ -1,7 +1,9 @@
 .calculator-wrapper {
+    padding-top: 24px;
+    padding-bottom: 120px;
 	display: flex;
-    gap: 32px;
-    height: 80vh;
+    gap: 40px;
+    align-items: start;
 }
 
 .calculator-item {
@@ -17,4 +19,118 @@
 .calculator-section-description {
     font-size: 16px;
     line-height: 1.2;
+    margin-bottom: 32px;
+}
+
+.calculator-options-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 32px;
+    column-gap: 20px;
+}
+
+
+/*------ Select Field ------*/
+
+.select-wrapper {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    width: 100%;
+    /* flex: 0 0 50%; */
+    position: relative;
+}
+
+/* .select-wrapper:nth-child(2n) {
+    padding-left: 32px;
+} */
+
+.select-label {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--black-color);
+    margin-bottom: 8px;
+}
+
+.select-field {
+    appearance: none;
+    outline: none;
+	cursor: pointer;
+    
+    padding: 8px 16px;
+    width: 100%;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 500;
+    background-color: var(--grey-color);
+    border: 1px solid #899197;
+	transition: .4s;
+}
+
+.select-field:focus {
+	outline: none;
+	border: 1px solid var(--accent-color);
+}
+
+.select-wrapper::after {
+    position: absolute;
+    content: "";
+    background-image: url('./../img/icons/arrows-icon.svg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    display: block;
+    width: 12px;
+    height: 26px;
+    bottom: 20px;
+    right: 16px;
+}
+
+.select-field.active .select-wrapper::after {
+    transform: rotate(180deg);
+}
+
+/*------ Result Field ------*/
+
+.calculator-result-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    margin-bottom: 48px;
+}
+
+.calculatorresult-price {
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.calculatorresult-price span {
+    padding-left: 16px;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+/*------ Action Field ------*/
+
+.calculator-action {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.calculator-button {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    width: 100%;
+    border: 2px solid var(--accent-color);
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--black-color);
+    transition: .4s ease-in-out;
+}
+
+.calculator-button:hover {
+    background-color: var(--accent-color);
 }
