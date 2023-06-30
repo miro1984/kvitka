@@ -1,13 +1,15 @@
 .breadcrumb {
-    padding: 16px 0;
+    padding: 4px 0;
 }
 
 .breadcrumb-list {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
 }
 
 .breadcrumb-item {
+    padding: 4px 0;
     display: flex;
     align-items: center;
 }

@@ -391,6 +391,11 @@
 
 /* Landscape phones and portrait tablets */
 @media (max-width: 768px) {
+    .section-container {
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+    
     .product__img {
         width: 100%;
         max-height: 240px;
@@ -441,6 +446,7 @@
 /* Portrait phones and smaller */
 
 @media (max-width: 500px) {
+
     .product-container {
         padding-top: 32px;
         padding-bottom: 32px;
