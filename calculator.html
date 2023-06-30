@@ -334,7 +334,7 @@
                 </div>
             </div>
         </div>
-        <div class="calculator-item">
+        <div class="calculator-item calculator-item-options">
             <h3 class="calculator-section-title">Визитки</h3>
             <p class="calculator-section-description">
                 Возможны односторонние и двухсторонние, цветные и чёрно-белые.
@@ -412,109 +412,69 @@
 
 
             </div>
-            <div class="calculator-result-wrapper">
-                <div class="calculatorresult-price">
-                    Стоимость: <span> 255,00 грн</span>
-                </div>
-            </div>
 
             <div class="calculator-action">
-                <button class="btn-reset calculator-button">В корзину</button>
-                <button class="btn-reset calculator-button">Заказать в 1 клик</button>
+                <div class="calculator-action-item">
+                    <button class="btn-reset calculator-button js-calculate-button">Просчитать</button>
+                </div>
+                <div class="calculator-action-item">
+                    <div class="calculator-result-price js-calculate-price">Стоимость: <span>12255,00 грн</span></div>
+                </div>              
+                
+           
+                <!-- <button class="btn-reset calculator-button">Заказать в 1 клик</button> -->
             </div>
+            
 
 
 
-
-<!--             <div class="calculator-form">
-                <label class="calc__descr">Материал</label>
-                <select name="Material" id="" class="calc__select">
-                    <option value="value1">Меловка 300 г/м2</option>
-                    <option value="value2">Меловка 350 г/м2</option>
-                    <option value="value3">Серебро/Золото</option>
-                    <option value="value4">Munken</option>
-                    <option value="value5">SplendorGel</option>
-                </select>
-            </div> -->
         </div>
         </div>
+            <div class="calculator-result-wrapper js-calculator-result-table">
+                <div class="calculator-table-wrapper">
+                    <p class="calculator-table-pretitle">Посмотрите влияние цены за единицу при разных количествах и сроках.</p>
+                    <p class="calculator-table-pretitle">Для заказа кликните по ячейке.</p>
+                    <table class="table-reset price-table calculator-result-table">
+                                <tr class="price-table__header">
+                                    <th class="price-table__item black bold text-align-left" rowspan="2" style="width: 220px;">На когда</th>
+                                    <th class="price-table__item black" colspan="6" style="width: 600px;">Стоимость 1 шт. при количестве:</th>
+                                </tr>
+                                <tr>
+                                    <th class="price-table__item black" style="width: 100px;">96 шт</th>
+                                    <th class="price-table__item black" style="width: 100px;">192 шт</th>
+                                    <th class="price-table__item black" style="width: 100px;">480 шт</th>
+                                    <th class="price-table__item black" style="width: 100px;">960 шт</th>
+                                    <th class="price-table__item black" style="width: 100px;">1920 шт</th>
+                                    <th class="price-table__item black" style="width: 100px;">3840 шт</th>
+                                </tr>
+                                <tr>
+                                    <td class="price-table__item black text-align-left">Срочно</td>
+                                    <td class="price-table__item price-table__item-select">25,38</td>
+                                    <td class="price-table__item price-table__item-select">25,38</td>
+                                    <td class="price-table__item price-table__item-select">25,38</td>
+                                    <td class="price-table__item price-table__item-select">25,38</td>
+                                    <td class="price-table__item price-table__item-select">25,38</td>
+                                    <td class="price-table__item price-table__item-select">25,38</td>
+                                </tr>
+                                <tr>
+                                    <td class="price-table__item black text-align-left">На завтра</td>
+                                    <td class="price-table__item price-table__item-select">25,38</td>
+                                    <td class="price-table__item price-table__item-select">25,38</td>
+                                    <td class="price-table__item price-table__item-select">25,38</td>
+                                    <td class="price-table__item price-table__item-select">25,38</td>
+                                    <td class="price-table__item price-table__item-select">25,38</td>
+                                    <td class="price-table__item price-table__item-select">25,38</td>
+                                </tr>
+                    </table>
+                </div>
 
+            </div>
 
 
     </div>
 </section>   
 
-
-
-<!--             <section class="product__calculate" id="calculate">
-                    <div class="container section-container">
-                        <h2 class="section-title">Просчитать стоимость изготовления УФ печати</h2>
-                        <p class="section-pretitle product-pretitle">
-                            Залогиньтесь и увидите цены с учетом Вашей скидки
-                        </p>
-                        <div class="calc__wrapper">
-                            <div class="calc__col">
-                                <span class="calc__descr">Тип</span>
-                                <select name="Sides" id="" class="calc__select">
-                                    <option value="value1">Односторонние</option>
-                                    <option value="value2">Двосторонние</option>
-                                </select>
-                            </div>
-                            <div class="calc__col">
-                                <span class="calc__descr">Размер</span>
-                                <select name="Size" id="" class="calc__select calc__select-size">
-                                    <option value="printSize1">50*90</option>
-                                    <option value="printSize2">85*55</option>      
-                                </select>
-                                <div class="calc__print-sizes">
-                                    <input class="calc__input calc__input-size" type="number" name="PrintWidth">
-                                    <input class="calc__input calc__input-size" type="number" name="PrintHeight">
-                                </div>
-                            </div>
-                            <div class="calc__col">
-                                <span class="calc__descr">Материал</span>
-                                <select name="Material" id="" class="calc__select">
-                                    <option value="value1">Меловка 300 г/м2</option>
-                                    <option value="value2">Меловка 350 г/м2</option>
-                                    <option value="value3">Серебро/Золото</option>
-                                    <option value="value4">Munken</option>
-                                    <option value="value5">SplendorGel</option>
-                                </select>
-                            </div>
-                            <div class="calc__col">
-                                <span class="calc__descr">Ламинация</span>
-                                <select name="Coating" id="" class="calc__select calc__select-1">
-                                    <option value="value1">Без ламинации</option>
-                                    <option value="value2">30 мкн. глянцевая</option>
-                                    <option value="value3">30 мкн. матовая</option>
-                                    <option value="value4">75 мкн. глянцевая</option>
-                                    <option value="value5">250 мкн. глянцевая</option>
-                                </select>
-                                <select name="Coating" id="" class="calc__select calc__select-2">
-                                    <option value="value1">Без ламинации</option>
-                                    <option value="value2">30 мкн. глянцевая</option>
-                                    <option value="value3">30 мкн. матовая</option>
-                                    <option value="value4">75 мкн. глянцевая</option>
-                                    <option value="value5">250 мкн. глянцевая</option>
-                                </select>
-                            </div>
-                            <div class="calc__col calc__col-footnote">
-                                <span class="calc__descr">Скругление углов</span>
-                                <input class="calc__checkbox" type="checkbox" name="Rounding">
-                            </div>
-                            <ul class="list-reset calc-footnote__list">
-                                <li class="calc-footnote__item">
-                                    <p class="calc-footnote__descr">Пластиковая визитница на 100 визиток включена</p>
-                                </li>
-                                <li class="calc-footnote__item">
-                                    <p class="calc-footnote__descr">Работа дизайнера (если нужна) не включена</p>
-                                </li>
-                            </ul>
-                            <button class="btn-reset calc__button">Просчитать</button>
-                            
-                        </div>
-                    </div>
-            </section>    -->        
+     
 
 <!---------- Modals ---------->
             <div class="modals">

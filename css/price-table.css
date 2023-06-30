@@ -22,6 +22,7 @@
 }
 
 .price-table__item-select {
+    position: relative;
     transition: all .3s ease-in-out;
     cursor: pointer;
 }
@@ -29,6 +30,14 @@
 .price-table__item-select:hover {
     background-color: var(--accent-color);
 }
+
+.price-table__item-select:hover .price-table__item-select::after {
+    position: absolute;
+    content: '*';
+    top: 0;
+    right: 0;
+} 
+
 
 .text-align-center {
     text-align: center;

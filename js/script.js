@@ -453,3 +453,17 @@ buttonRegister.addEventListener('click', function () {
 	formSuccess.classList.add('active');
 	windowSuccessRegister.classList.add('active');
 });
+
+
+
+// Calculator Result Table
+
+const buttonCalculateResult = document.querySelector('.js-calculate-button');
+const tableCalculateResult = document.querySelector('.js-calculator-result-table');
+const priceCalculateResult = document.querySelector('.js-calculate-price');
+
+buttonCalculateResult.addEventListener('click', function () {
+	buttonCalculateResult.textContent = "Заказать";
+	priceCalculateResult.classList.add('active');
+	tableCalculateResult.classList.add('active');
+});

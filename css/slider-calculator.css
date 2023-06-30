@@ -41,9 +41,9 @@
 }
 
 .calculator-slider-pagination {
+    padding-top: 10px;
     height: 20%;
     box-sizing: border-box;
-    padding: 10px 0;
 }
 
 .calculator-slider-pagination .swiper-slide {
