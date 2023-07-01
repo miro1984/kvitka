@@ -293,6 +293,7 @@
         width: 100%;
     }
 
+   
     .calculator-table {
         flex-direction: row;
     }
@@ -323,9 +324,18 @@
         grid-template-columns: repeat(1, 1fr);
     }
 
+    .calculator-section-title {
+        margin-bottom: 12px;
+    }
+    
+    .calculator-section-description {
+        margin-bottom: 12px;
+    }
+
     .calculator-result-item {
         width: auto;
     }
+
     .calculator-result-item:first-child {
         padding-left: 16px;
     }
