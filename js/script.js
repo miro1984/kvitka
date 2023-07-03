@@ -462,9 +462,19 @@ const buttonCalculateResult = document.querySelector('.js-calculate-button');
 const buttonOrder = document.querySelector('.js-order-button');
 const tablePriceList = document.querySelector('.js-pricelist-table');
 const valueCalculateResult = document.querySelector('.js-calculate-value');
+const wrapperCalculateResult = document.querySelector('.js-calculator-result');
 
 buttonCalculateResult.addEventListener('click', function () {
+
+
+	wrapperCalculateResult.classList.add('active');
+	wrapperCalculateResult.scrollIntoView({ behavior: 'smooth' });
 	valueCalculateResult.textContent = "12453.00 грн";
 	tablePriceList.classList.add('active');
 	buttonOrder.classList.add('active');
+
 });
+
+
+
+
