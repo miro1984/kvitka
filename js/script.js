@@ -476,5 +476,33 @@ buttonCalculateResult.addEventListener('click', function () {
 });
 
 
+// Calculator Tabs
 
 
+const tabsBtn = document.querySelectorAll(".js-calculator-tabs-button");
+const tabsItems = document.querySelectorAll(".js-calculator-tabs-content");
+
+tabsBtn.forEach(onTabClick);
+
+function onTabClick(item) {
+	item.addEventListener("click", function () {
+		let currentBtn = item;
+		let tabId = currentBtn.getAttribute("data-tab");
+		let currentTab = document.querySelector(tabId);
+
+		if (!currentBtn.classList.contains('active')) {
+			tabsBtn.forEach(function (item) {
+				item.classList.remove('active');
+			});
+
+			tabsItems.forEach(function (item) {
+				item.classList.remove('active');
+			});
+
+			currentBtn.classList.add('active');
+			currentTab.classList.add('active');
+		}
+	});
+}
+
+document.querySelector('.js-calculator-tabs-button').click();
