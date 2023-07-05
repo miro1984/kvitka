@@ -455,12 +455,13 @@ buttonRegister.addEventListener('click', function () {
 });
 
 
+// Quantity Manual
+
 
 // Calculator Result Table
 
 const buttonCalculateResult = document.querySelector('.js-calculate-button');
 const buttonOrder = document.querySelector('.js-order-button');
-const tablePriceList = document.querySelector('.js-pricelist-table');
 const valueCalculateResult = document.querySelector('.js-calculate-value');
 const wrapperCalculateResult = document.querySelector('.js-calculator-result');
 
@@ -468,12 +469,49 @@ buttonCalculateResult.addEventListener('click', function () {
 
 
 	wrapperCalculateResult.classList.add('active');
-	wrapperCalculateResult.scrollIntoView({ behavior: 'smooth' });
+	//	wrapperCalculateResult.scrollIntoView({ behavior: 'smooth' });
 	valueCalculateResult.textContent = "12453.00 грн";
-	tablePriceList.classList.add('active');
 	buttonOrder.classList.add('active');
 
 });
+
+
+// Calculator Select 
+const manualQuantity = document.querySelector('.js-select-quantity');
+const inputQuantity = document.querySelector('.js-input-quantity');
+
+	manualQuantity.addEventListener('change', function() {
+		if (manualQuantity.value == 'manual') {
+			inputQuantity.disabled = false;
+		} else {
+			inputQuantity.disabled = true;
+			inputQuantity.value = 'Количество';
+		}
+		});
+
+
+//const inputChange = document.querySelector('.js-input-quantity');
+//const inputSize = document.querySelector('.js-input-size');
+
+//const selectSize = document.querySelector('.js-select-size');
+//console.log(selectSize[selectSize.value]);
+	
+//inputSize.addEventListener('change', function() {
+//	selectSize[selectSize.value].textContent = "Выбран индивидуальный размер";
+//});
+
+		//	selectInputValue.placeholder = this.value;
+	//	});
+
+
+
+//	console.log(selectFieldValues[i].value);
+//	selectFieldValues[i].addEventListener('click', function () {
+//		howmakeorderContent[i].classList.toggle('open');
+//		howmakeorderIcon[i].classList.toggle('open');
+
+
+
 
 
 // Calculator Tabs
