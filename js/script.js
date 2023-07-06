@@ -471,23 +471,55 @@ buttonCalculateResult.addEventListener('click', function () {
 	wrapperCalculateResult.classList.add('active');
 	//	wrapperCalculateResult.scrollIntoView({ behavior: 'smooth' });
 	valueCalculateResult.textContent = "12453.00 грн";
-	buttonOrder.classList.add('active');
-
+	buttonOrder.disabled = false;
 });
 
 
-// Calculator Select 
-const manualQuantity = document.querySelector('.js-select-quantity');
+// Calculator Manual Set Quantity
+const selectQuantity = document.querySelector('.js-select-quantity');
 const inputQuantity = document.querySelector('.js-input-quantity');
+const listQuantity = document.querySelector('.js-quantity-list');
 
-	manualQuantity.addEventListener('change', function() {
-		if (manualQuantity.value == 'manual') {
-			inputQuantity.disabled = false;
-		} else {
-			inputQuantity.disabled = true;
-			inputQuantity.value = 'Количество';
-		}
-		});
+selectQuantity.addEventListener('change', function () {
+	if (selectQuantity.value == 'manual') {
+		inputQuantity.disabled = false;
+		listQuantity.classList.add('disabled');
+		inputQuantity.classList.add('active');
+	} else {
+		inputQuantity.disabled = true;
+		listQuantity.classList.remove('disabled');
+		inputQuantity.classList.remove('active');
+		//		inputQuantity.value = 'Количество';
+	}
+});
+
+// Calculator Manual Set Size
+const selectSize = document.querySelector('.js-select-size');
+const inputSizeWidth = document.querySelector('.js-input-size-width');
+const inputSizeHeight = document.querySelector('.js-input-size-height');
+const inputSizeWrapper = document.querySelector('.js-input-size');
+const listSize = document.querySelector('.js-size-list');
+
+
+
+
+selectSize.addEventListener('change', function () {
+
+
+	if (selectSize.value == 'manual') {
+		inputSizeWidth.disabled = false;
+		inputSizeHeight.disabled = false;
+		listSize.classList.add('disabled');
+		inputSizeWrapper.classList.add('active');
+	} else {
+		inputSizeWidth.disabled = true;
+		inputSizeHeight.disabled = true;
+		listSize.classList.remove('disabled');
+		inputSizeWrapper.classList.remove('active');
+	}
+});
+
+
 
 
 //const inputChange = document.querySelector('.js-input-quantity');
@@ -495,13 +527,13 @@ const inputQuantity = document.querySelector('.js-input-quantity');
 
 //const selectSize = document.querySelector('.js-select-size');
 //console.log(selectSize[selectSize.value]);
-	
+
 //inputSize.addEventListener('change', function() {
 //	selectSize[selectSize.value].textContent = "Выбран индивидуальный размер";
 //});
 
-		//	selectInputValue.placeholder = this.value;
-	//	});
+//	selectInputValue.placeholder = this.value;
+//	});
 
 
 

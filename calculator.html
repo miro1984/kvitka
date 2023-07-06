@@ -336,17 +336,17 @@
             </div>
 <!------ Calculate Options Block ------> 
             <div class="calculator-item calculator-item-options">
-                <h3 class="calculator-section-title">Визитки</h3>
-                <p class="calculator-section-description">
+                <h3 class="calculator-section-title">Просчет визиток</h3>
+                <p class="calculator-section-description none">
                     Возможны односторонние и двухсторонние, цветные и чёрно-белые.
                     Матовая или глянцевая ламинация продлит срок службы изделия.
                 </p>
 
 <!------ Calculate Options Quantity ------> 
                     <div class="calculator-options-quantity">
-                        <label for="" class="select-label">Количество</label>
+                        <label for="" class="select-label">Количество:</label>
                         <div class="select-wrapper-change">
-                            <div class="select-wrapper-item">
+                            <div class="select-wrapper-item quantity-list js-quantity-list">
                                 <select name="Quantity" id="" class="select-field js-select-quantity">
                                     <option value disabled>Выберите</option>
                                     <option value="100">100</option>
@@ -360,28 +360,35 @@
                             </div>
         
                             <div class="select-wrapper-item">
-                                <input class="select-field-input js-input-quantity" type="number" placeholder="Количество" disabled>                     
+                                <input class="select-field-input input-quantity js-input-quantity" type="number" placeholder="Количество" disabled>                     
                             </div>
                         </div>
                     </div>
 
 <!------ Calculate Options Size ------> 
-                    <div class="calculator-options-size">
-                        <label for="" class="select-label">Размер</label>
+                    <div class="calculator-options-size">                        
                         <div class="select-wrapper-change select-wrapper-change-size">
-                            <div class="select-wrapper-item">
-                                <label for="" class="select-label-suptitle">Выберите стандартный:</label>
+                            <div class="select-wrapper-item  size-list js-size-list">
+                                <!-- <label for="" class="select-label-suptitle">Выберите стандартный:</label> -->
+                                <label for="" class="select-label">Размер:</label>
                                 <select name="Quantity" id="" class="select-field js-select-size">
                                     <option value="0" disabled>Выберите</option>
                                     <option value="1">90x50 мм</option>
                                     <option value="2">85x55 мм</option>
+                                    <option value="manual">Свой размер:</option>
                                 </select>
                             </div>
-                            <div class="select-wrapper-item">
-                                <label for="" class="select-label-suptitle">Введите свой, мм:</label>
+                            <div class="select-wrapper-item input-size-wrapper js-input-size">
+                                <!-- <label for="" class="select-label-suptitle">Введите свой, мм:</label> -->
                                 <div class="select-wrapper-item-size">
-                                    <input class="select-field-input js-input-size" type="number" placeholder="Ширина"> 
-                                    <input class="select-field-input js-input-size" type="number" placeholder="Высота"> 
+                                    <div class="size-item">
+                                        <label for="" class="select-label-suptitle">Ширина, мм:</label>
+                                        <input class="select-field-input js-input-size-width" type="number" placeholder="Ширина" disabled> 
+                                    </div>
+                                    <div class="size-item">
+                                        <label for="" class="select-label-suptitle">Высота, мм:</label>
+                                        <input class="select-field-input js-input-size-height" type="number" placeholder="Высота" disabled> 
+                                    </div>                                    
                                 </div>
                             </div>
                         </div>
@@ -390,7 +397,7 @@
 <!------ Calculate Options Size Not Changed------> 
                     <div class="calculator-options-wrapper">
                         <div class="select-wrapper">
-                            <label for="" class="select-label">Печать</label>
+                            <label for="" class="select-label">Печать:</label>
                             <select name="Quantity" id="" class="select-field">
                                 <option value disabled>Выберите</option>
                                 <option value="1">односторонняя 4+0</option>
@@ -401,7 +408,7 @@
                         </div>
 
                         <div class="select-wrapper">
-                            <label for="" class="select-label">Бумага</label>
+                            <label for="" class="select-label">Материал:</label>
                             <select name="Quantity" id="" class="select-field">
                                 <option value disabled>Выберите</option>
                                 <option value="1">Мелованная 300 г/м2</option>
@@ -413,20 +420,21 @@
                         </div>
 
                         <div class="select-wrapper">
-                            <label for="" class="select-label">Ламинация</label>
+                            <label for="" class="select-label">Ламинация:</label>
                             <select name="Quantity" id="" class="select-field">
                                 <option value disabled>Выберите</option>
-                                <option value="1">матовая односторонняя</option>
-                                <option value="2">матовая двосторонняя</option>
-                                <option value="3">глянцевая односторонняя</option>
-                                <option value="4">глянцевая двосторонняя</option>
-                                <option value="5">матовая 75мкн</option>
-                                <option value="6">глянцевая 75мкн</option>
+                                <option value="1">без ламинации</option>
+                                <option value="2">матовая односторонняя</option>
+                                <option value="3">матовая двосторонняя</option>
+                                <option value="4">глянцевая односторонняя</option>
+                                <option value="5">глянцевая двосторонняя</option>
+                                <option value="6">матовая 75мкн</option>
+                                <option value="7">глянцевая 75мкн</option>
                             </select>
                         </div>
 
                         <div class="select-wrapper">
-                            <label for="" class="select-label">Скругление углов</label>
+                            <label for="" class="select-label">Скругление углов:</label>
                             <select name="Quantity" id="" class="select-field">
                                 <option value disabled>Выберите</option>
                                 <option value="1">без скругления</option>
@@ -439,13 +447,9 @@
                 <div class="calculator-action">
                     <div class="calculator-action-item">
                         <button class="btn-reset calculator-button js-calculate-button">Просчитать</button>
-                    </div>            
-                    
-                    <div class="calculator-action-item">
-                        <button class="btn-reset calculator-button calculator-button-order js-order-button">Заказать</button>
-                    </div>                    
-                </div>   
-
+                    </div>
+                </div>        
+ 
                 <div class="calculator-result-wrapper js-calculator-result">
 <!--                     <div class="calculator-result-description">
                         <h4 class="calculator-result-description-title">Итого:</h4>
@@ -484,9 +488,12 @@
                             <p class="calculator-result-value js-calculate-value">0.00 грн</p>
                         </div>
                     </div>
-
                 </div>
-     
+                <div class="calculator-action">
+                    <div class="calculator-action-item">
+                        <button class="btn-reset calculator-button-order js-order-button" disabled>Заказать</button>
+                    </div>                    
+                </div>  
 
             </div>
         </div>
