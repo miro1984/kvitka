@@ -278,7 +278,7 @@ modalButtons.forEach(function (item) {
 
 
 	item.addEventListener('click', function (e) {
-
+		lockScroll();
 		e.preventDefault();
 
 		var modalId = this.getAttribute('data-modal'),
@@ -303,6 +303,7 @@ closeButtons.forEach(function (item) {
 		e.preventDefault();
 		parentModal.classList.remove('active');
 		modalOverlay.classList.remove('active');
+		unlockScroll();
 	});
 
 });
@@ -313,6 +314,7 @@ document.body.addEventListener('keyup', function (e) {
 	if (e.key == 'Escape') {
 		document.querySelector('.modal.active').classList.remove('active');
 		document.querySelector('.overlay-modal').classList.remove('active');
+		unlockScroll();
 	};
 }, false);
 
@@ -321,6 +323,7 @@ modalOverlay.addEventListener('click', function () {
 
 	document.querySelector('.modal.active').classList.remove('active');
 	this.classList.remove('active');
+	unlockScroll();
 });
 
 
@@ -489,9 +492,11 @@ selectQuantity.addEventListener('change', function () {
 		inputQuantity.disabled = true;
 		listQuantity.classList.remove('disabled');
 		inputQuantity.classList.remove('active');
-		//		inputQuantity.value = 'Количество';
 	}
 });
+
+
+
 
 // Calculator Manual Set Size
 const selectSize = document.querySelector('.js-select-size');
@@ -500,12 +505,7 @@ const inputSizeHeight = document.querySelector('.js-input-size-height');
 const inputSizeWrapper = document.querySelector('.js-input-size');
 const listSize = document.querySelector('.js-size-list');
 
-
-
-
 selectSize.addEventListener('change', function () {
-
-
 	if (selectSize.value == 'manual') {
 		inputSizeWidth.disabled = false;
 		inputSizeHeight.disabled = false;
@@ -518,32 +518,6 @@ selectSize.addEventListener('change', function () {
 		inputSizeWrapper.classList.remove('active');
 	}
 });
-
-
-
-
-//const inputChange = document.querySelector('.js-input-quantity');
-//const inputSize = document.querySelector('.js-input-size');
-
-//const selectSize = document.querySelector('.js-select-size');
-//console.log(selectSize[selectSize.value]);
-
-//inputSize.addEventListener('change', function() {
-//	selectSize[selectSize.value].textContent = "Выбран индивидуальный размер";
-//});
-
-//	selectInputValue.placeholder = this.value;
-//	});
-
-
-
-//	console.log(selectFieldValues[i].value);
-//	selectFieldValues[i].addEventListener('click', function () {
-//		howmakeorderContent[i].classList.toggle('open');
-//		howmakeorderIcon[i].classList.toggle('open');
-
-
-
 
 
 // Calculator Tabs

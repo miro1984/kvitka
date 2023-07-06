@@ -451,35 +451,6 @@
                 </div>        
  
                 <div class="calculator-result-wrapper js-calculator-result">
-<!--                     <div class="calculator-result-description">
-                        <h4 class="calculator-result-description-title">Итого:</h4>
-                        <ul class="list-reset calculator-result-description-list">
-                            <li class="calculator-result-description-item">
-                                <p class="calculator-result-description-text">Размер:</p>
-                                <p class="calculator-result-description-value">90*50 мм</p>
-                            </li>
-                            <li class="calculator-result-description-item">
-                                <p class="calculator-result-description-text">Количество:</p>
-                                <p class="calculator-result-description-value">100 шт</p>
-                            </li>
-                            <li class="calculator-result-description-item">
-                                <p class="calculator-result-description-text">Печать:</p>
-                                <p class="calculator-result-description-value">двосторонняя 4+4</p>
-                            </li>
-                            <li class="calculator-result-description-item">
-                                <p class="calculator-result-description-text">Бумага:</p>
-                                <p class="calculator-result-description-value">Мелованная 350 г/м2</p>
-                            </li>
-                            <li class="calculator-result-description-item">
-                                <p class="calculator-result-description-text">Ламинация:</p>
-                                <p class="calculator-result-description-value">без ламинации</p>
-                            </li>
-                            <li class="calculator-result-description-item">
-                                <p class="calculator-result-description-text">Скругление:</p>
-                                <p class="calculator-result-description-value">без скругления</p>
-                            </li>
-                        </ul>
-                    </div> -->
                     <div class="calculator-result-content">
                         <div class="calculator-result-item">
                             <p class="calculator-result-title">Стоимость:</p>
@@ -491,7 +462,7 @@
                 </div>
                 <div class="calculator-action">
                     <div class="calculator-action-item">
-                        <button class="btn-reset calculator-button-order js-order-button" disabled>Заказать</button>
+                        <button class="btn-reset calculator-button-order open-modal js-order-button" data-modal="order" disabled>Заказать</button>
                     </div>                    
                 </div>  
 
@@ -622,6 +593,7 @@
 
 <!---------- Modals ---------->
             <div class="modals">
+<!------ Callback Modal ------> 
                 <div class="l-form modal" data-target="form-callback" data-modal-window="callback"  data-modal="1">
                     <form action="#" class="form form__callback">
                         <button class="btn-reset form-close__btn modal-close">
@@ -641,7 +613,6 @@
                         </div>
                             <input class="btn__callback form__button-primary" type="submit" value="Отправить" />
                     </form>
-
                 </div>
 			
                 <!------ Login Modal ------> 
@@ -743,7 +714,7 @@
                         </div>
                     </div>
                 </div>
-                
+                <!------ Search Modal ------> 
                 <div class="l-form modal" data-modal="5">
                     <form action="#" class="form form__search">
                         <button class="btn-reset form-close__btn modal-close">
@@ -785,6 +756,70 @@
                                 
                     </form>
                 </div>
+                <!------ Search Modal ------> 
+                <div class="l-form modal" data-modal="order">
+                    <div class="modal-container">
+                        <!------ Close Modal Button ------> 
+                        <button class="btn-reset form-close__btn modal-close">
+                            <svg class="close-icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M777.856 280.192l-33.92-33.952-231.872 231.872-231.84-231.872-33.984 33.888 231.872 231.904-231.84 231.84 33.888 33.984 231.904-231.904 231.84 231.872 33.952-33.888-231.872-231.904z"/>
+                            </svg>
+                        </button>
+                        <!------ End Close Modal Button ------> 
+
+                        <h3 class="modal-order-title">Заказ № <span>123654</span></h3>
+
+                        <div class="modal-order-description">
+                        <h4 class="modal-order-subtitle">Описание:</h4>
+                        <ul class="list-reset modal-order-list">
+                            <li class="modal-order-item">
+                                <p class="modal-order-text">Количество:</p>
+                                <p class="modal-order-value">100 шт</p>
+                            </li>
+                            <li class="modal-order-item">
+                                <p class="modal-order-text">Размер:</p>
+                                <p class="modal-order-value">90*50 мм</p>
+                            </li>
+                            <li class="modal-order-item">
+                                <p class="modal-order-text">Печать:</p>
+                                <p class="modal-order-value">двосторонняя 4+4</p>
+                            </li>
+                            <li class="modal-order-item">
+                                <p class="modal-order-text">Бумага:</p>
+                                <p class="modal-order-value">Мелованная 350 г/м2</p>
+                            </li>
+                            <li class="modal-order-item">
+                                <p class="modal-order-text">Ламинация:</p>
+                                <p class="modal-order-value">без ламинации</p>
+                            </li>
+                            <li class="modal-order-item">
+                                <p class="modal-order-text">Скругление:</p>
+                                <p class="modal-order-value">без скругления</p>
+                            </li>
+                        </ul>
+                        </div>
+
+                        <div class="modal-order-upload">
+                            <label for="upload-file" class="file-upload-label">Загрузить файл</label>
+                            <input id="upload-file" class="file-upload-input" type="file" name="file-upload">
+                        </div>
+
+                        <form class="modal-order-form">
+                                <div class="form-item">
+                                    <input type="text" class="form__input" placeholder=" ">
+                                    <label for="" class="form__label">Имя</label>
+                                </div>
+                                <div class="form-item">
+                                    <input type="tel" class="form__input" placeholder=" ">
+                                    <label for="" class="form__label">Телефон</label>
+                                </div>
+                                <div class="form-item">
+                                    <input type="email" class="form__input" placeholder=" ">
+                                    <label for="" class="form__label">E-mail</label>
+                                </div>
+                        </form>
+                    </div>
+                </div> <!------ End Search Modal ------>
+
                 <div class="overlay overlay-modal"></div>
 	        </div>
 
