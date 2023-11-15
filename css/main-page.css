@@ -56,6 +56,31 @@
     transition: all .3s ease-in-out;
 }
 
+.logout-button {
+    display: none;
+}
+
+.logout-button.active {
+    display: flex;
+}
+
+.login-text.active {
+    display: block;
+}
+
+.login-text {
+    display: none;
+}
+
+.login-cabinet {
+    display: none;
+}
+
+.login-cabinet.active {
+    display: block;
+}
+
+
 .header__icon {
     background-color: #888888;
     fill: var(--white-color);
