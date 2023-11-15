@@ -479,8 +479,24 @@
     text-align: center;
     font-weight: 500;
     font-size: 24px;
+    margin-bottom: 20px;
 }
 
+.form-succes-text-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.form-succes-text-description {
+    font-size: 16px;    
+}
+
+.form-succes-text-name {
+    padding-left: 16px;
+    font-weight: 500;
+    font-size: 20px;
+}
 
 
 
