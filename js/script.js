@@ -446,14 +446,14 @@ const formSuccess = document.querySelector('.js-form-success');
 const windowSuccessLogIn = document.querySelector('.js-success-login');
 const windowSuccessRegister = document.querySelector('.js-success-register');
 
-const buttonLogOut = document.querySelector('.js-logout-button');
+/* const buttonLogOut = document.querySelector('.js-logout-button'); */
 const textGoCabinet = document.querySelector('.js-go-cabinet');
 const textLogIn = document.querySelector('.js-login');
 
 buttonLogIn.addEventListener('click', function () {
 	formSuccess.classList.add('active');
 	windowSuccessLogIn.classList.add('active');
-	buttonLogOut.classList.add('active');
+	/* buttonLogOut.classList.add('active'); */
 	textGoCabinet.classList.add('active');
 	textLogIn.classList.remove('active');
 });
